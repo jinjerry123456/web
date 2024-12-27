@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% block title %} Login {% endblock %}
+{% block content %}
+<!-- <h1>Welcome to the Learning Platform</h1>
+<p>Browse and enroll in courses to enhance your knowledge!</p> -->
+
+<!-- the largest box -->
+<div class=" log-box">
+    <!-- slide box -->
+    <div class="pre-box">
+    </div>
+
+    <!-- register -->
+    <div class="register-form">
+        <div class="title-box">
+            <h1>Register</h1>
+        </div>
+        <form method="POST" action="{{ url_for('main.login_register') }}">
+            {{ register_form.hidden_tag() }}
+            <div class="form-group">
+                <div class="input-box">
+                    <div class="label-box">
+                        <div class="label-box">{{ register_form.username.label(class="form-label", for="username") }}
+                            <div class="required-label">required</div>
+                        </div>
+                    </div>
+                    {{ register_form.username(id="username", class="form-control",
+                    placeholder="Length from 2 to 20") }}
+                    <span class="validation-indicator"></span>
+                    <!-- print the error -->
+                    {% if register_form.username.errors %}
+                    <div class="text-danger">
+                        {% for error in register_form.username.errors %}
+                        <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="input-box">
+                    <div class="label-box">
+                        {{ register_form.email.label(class="form-label", for="email") }}
+                        <div class="required-label">required</div>
+                    </div>
+                    {{ register_form.email(id="email", class="form-control",
+                    placeholder="Valid email: e.g.username@domain.com") }}
+                    <span class="validation-indicator"></span>
+                    <!-- print the error -->
+                    {% if register_form.email.errors %}
+                    <div class="text-danger">
+                        {% for error in register_form.email.errors %}
+                        <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="input-box">
+                    <div class="label-box">
+                        {{ register_form.password.label(class="form-label", for="password") }}
+                        <div class="required-label">required</div>
+                    </div>
+                    {{ register_form.password(id="password", class="form-control",
+                    placeholder="Valid password: e.g. Abc123 (Minimal length: 6)") }}
+                    <span class="validation-indicator"></span>
+                    <!-- print the error -->
+                    {% if register_form.password.errors %}
+                    <div class="text-danger">
+                        {% for error in register_form.password.errors %}
+                        <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                </div>
+                <div class="input-box">
+                    <div class="label-box">
+                        {{ register_form.confirm_password.label(class="form-label", for="confirm_password") }}
+                        <div class="required-label">required</div>
+                    </div>
+                    {{ register_form.confirm_password(id="confirm_password", class="form-control",
+                    placeholder="Repeat password") }}
+                    <span class="validation-indicator"></span>
+                    <!-- print the error -->
+                    {% if register_form.confirm_password.errors %}
+                    <div class="text-danger">
+                        {% for error in register_form.confirm_password.errors %}
+                        <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="input-box">
+                    {{ register_form.role.label(class="form-label", for="role") }}
+                    {{ register_form.role(id="role",class="rol-box") }}
+                    <!-- print the error -->
+                    {% if register_form.role.errors %}
+                    <div class="text-danger">
+                        {% for error in register_form.role.errors %}
+                        <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="btn-box">
+                    <button type="submit" name="register" class="btn-box">Register</button>
+                    <button type="reset" class="btn-box">Reset</button>
+                </div>
+                <div class="btn-box">
+                    <!-- the event of point -->
+                    <p onclick="mySwitch()">Have account? Login</p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- login -->
+    <div class="login-form">
+        <!-- tittle -->
+        <div class="tittle-log">Start studying~~</div>
+        <div class="title-box theme-font">
+            <h1>Login</h1>
+        </div>
+        <form method="POST" action="{{ url_for('main.login_register') }}">
+            {{ login_form.hidden_tag() }}
+            <div class="form-group">
+                <div class="input-box">
+                    <div class="label-box">{{ login_form.username.label(class="form-label", for="username") }}
+                        <div class="required-label">required</div>
+                    </div>
+                    <div class="form-input">
+                        {{ login_form.username(id="username", class="form-control",
+                        placeholder="Length from 2 to 20") }}
+                        <!-- print the error -->
+                        {% if login_form.username.errors %}
+                        <div class="text-danger">
+                            {% for error in login_form.username.errors %}
+                            <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="label-box">
+                        {{ login_form.password.label(class="form-label", for="confirm_password") }}
+                        <div class="required-label">required</div>
+                    </div>
+                    {{ login_form.password(id="password", class="form-control",
+                    placeholder="Valid password: e.g. Abc123 (Minimal length: 6)") }}
+                    <!-- print the error -->
+                    {% if login_form.password.errors %}
+                    <div class="text-danger">
+                        {% for error in login_form.password.errors %}
+                        <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="btn-box">
+                    <button type="submit" name="login" class="btn-box">Login</button>
+                    <button type="reset" class="btn-box">Reset</button>
+                </div>
+                <!-- point event -->
+                <div class="btn-box">
+                    <p onclick="mySwitch()">Don't have account? register one</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<script src="{{ url_for('static', filename='js/login+change.js') }}"></script>
+
+{% endblock %}

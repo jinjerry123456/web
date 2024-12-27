@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% block title %} Home page {% endblock %}
+
+{% block content %}
+
+<!-- Cookie warning -->
+<div id="cookie-warning" class="cookie-warning">
+    <p>We use cookies to enhance your browsing experience. By continuing to use this website, you agree to our Cookie
+        Policy.</p>
+    <button id="accept-cookie" class="btn btn-primary">Accept</button>
+</div>
+
+<!-- poster part -->
+<div class="container my-5 py-5 bg1">
+    <div class="p-5 text-center bg-body-tertiary rounded-3 bg2 poster-word ">
+        <h1 class="text-body-emphasis fw-bold">Course library</h1>
+        <p class="col-lg-8 mx-auto fs-5 text-muted fw-bold poster-word">
+            Learning is a journey through infinite possibilities<i class="bi bi-balloon-fill"></i>, where each step
+            opens a new world. Embrace the unknown, for it iswhere dreams take flight
+            <i class="bi bi-balloon-heart-fill"></i><i class="bi bi-emoji-kiss"></i>.
+
+        </p>
+        <div class="d-inline-flex gap-2 mb-5">
+            <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill index-button" type="button">
+                <a class="nav-link px-2 link-body-emphasis" href="{{ url_for('main.courses') }}">Start Learning</a>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- first section -->
+<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 container">
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden col-6">
+        <div class="my-3 py-3 ">
+            <h2 class="display-5">Selected Courses Worldwide</h2>
+            <p class="lead">"Explore top-quality courses from around the world, bringing global knowledge to your
+                fingertips."</p>
+        </div>
+        <div class="bg-body-tertiary shadow-sm mx-auto bg3"></div>
+    </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden col-6">
+        <div class="my-3 p-3">
+            <h2 class="display-5">Innovative approaches to learning</h2>
+            <p class="lead">"Embrace the future of education with interactive and flexible learning methods designed to
+                empower you."</p>
+        </div>
+        <div class="bg-dark shadow-sm mx-auto bg4"></div>
+    </div>
+</div>
+
+
+
+<!-- search box -->
+<div class="search-course-box-container">
+
+    <!-- search box -->
+    <div class="search-course">
+        <div>
+            <div class="search-tittle1">You can search the course you whant</div>
+
+            <form method="get" action="{{ url_for('main.index') }}" class="search-form searchbox" aria-label="Search">
+                <input type="text" name="q" placeholder="Search for courses..." value="{{ query }}"
+                    class="search-course-box" aria-label="Search">
+                <button type="submit" class="btn btn-outline-warning search-botton"><i
+                        class="bi bi-search">Search</i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- show the search result -->
+    <div class="row d-flex justify-content-center">
+
+        {% if query %}
+        <h2 class="search-tittle">Search Results for "{{ query }}"</h2>
+        {% if courses %}
+        <div class="row">
+            {% for course in courses %}
+            <div class="col-lg-4 ">
+                <div class="card text-center search-result">
+                    <!-- picture shown -->
+                    <div class="d-flex justify-content-center">
+                        <div class="mt-3 picture-box rounded-circle">
+                            {% if course.image_url %}
+                            <img src="{{ course.image_url }}" class=" round-pic" alt="{{ course.title }}">
+                            {% elif course.video_url %}
+                            <video class=" round-pic" controls>
+                                <source src="{{ course.video_url }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            {% else %}
+                            <svg class="bd-placeholder-img round-pic" xmlns="http://www.w3.org/2000/svg" role="img"
+                                aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+                            </svg>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="card-body ">
+                        <h2 class="fw-normal">{{ course.title }}</h2>
+                        <p class="search-detail">{{ course.description | truncate(100, True, '...') }}</p>
+                        <p><a class="btn btn-secondary search-detal-button"
+                                href="{{ url_for('main.course_detail', course_id=course.id) }}">View
+                                details &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="search-tittle">No courses found matching your search.</p>
+        {% endif %}
+        {% else %}
+        <h2 class="search-tittle">Latest Courses</h2>
+        <div class="row">
+            {% for course in courses %}
+            <div class="col-lg-4 ">
+                <div class="card text-center search-result">
+                    <!-- picture shown -->
+                    <div class="d-flex justify-content-center">
+                        <div class="mt-3 picture-box rounded-circle">
+                            {% if course.image_url %}
+                            <img src="{{ course.image_url }}" class=" round-pic" alt="{{ course.title }}">
+                            {% elif course.video_url %}
+                            <video class=" round-pic" controls>
+                                <source src="{{ course.video_url }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            {% else %}
+                            <svg class="bd-placeholder-img round-pic" xmlns="http://www.w3.org/2000/svg" role="img"
+                                aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+                            </svg>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="card-body ">
+                        <h2 class="fw-normal">{{ course.title }}</h2>
+                        <p class="search-detail">{{ course.description | truncate(100, True, '...') }}</p>
+                        <p><a class="btn btn-secondary search-detal-button"
+                                href="{{ url_for('main.course_detail', course_id=course.id) }}">View
+                                details &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+
+    </div>
+
+
+
+
+
+
+
+    {% endblock %}

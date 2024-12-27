@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Manage the logs{% endblock %}
+{% block content %}
+
+
+<div class="log-box1">
+    <h1>Log Viewer</h1>
+    <pre>{{ logs }}</pre>
+
+    <div class="page-box1 ">
+        {% if total_pages > 1 %}
+        <div class="text-center">
+            <ul class="pagination pagebox2">
+                {% if page > 1 %}
+                <li class="page-item1"><a href="{{ url_for('main.view_logs', page=page-1) }}">Previous</a></li>
+                {% else %}
+                <li class="disabled"><span>Previous</span></li>
+                {% endif %}
+                <span>&nbsp;&nbsp;</span>
+                <li class="page-item1"><span>Page {{ page }} of {{ total_pages }}</span></li>
+                <span>&nbsp;&nbsp;</span>
+                {% if page < total_pages %} <li><a href="{{ url_for('main.view_logs', page=page+1) }}">Next</a></li>
+                    {% else %}
+                    <li class="disabled"><span>Next</span></li>
+                    {% endif %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

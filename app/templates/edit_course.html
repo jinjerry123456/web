@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit Course{% endblock %}
+
+{% block content %}
+<div class="container tittle-box">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
+            <li class="breadcrumb-item">
+                <a class="link-body-emphasis" href="">
+                    <svg class="bi" width="16" height="16">
+                        <i class="bi bi-house-door-fill"></i>
+                    </svg>
+                    <span class="visually-hidden">Home</span>
+                </a>
+            </li>
+            <li class="breadcrumb-item">
+                <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">Admin Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                Edit Course Information
+            </li>
+        </ol>
+    </nav>
+</div>
+
+<div class="form-container-course">
+    <div class="form_box">
+        <h1 class="mt-4">Edit Course Information</h1>
+        <form method="POST" onsubmit="return validateForm()">
+            {{ form.hidden_tag() }}
+
+            <!-- Course Title -->
+            <div class="form-group">
+                <div class="Course-label-box">
+                    {{ form.title.label(class="form-label", for="title") }}
+                    <span class="required-label">required</span>
+                </div>
+                <!-- <div class="edit-box"> -->
+                {{ form.title(id="title", class="Course-input-box", placeholder="Enter course title") }}
+                <span class="validation-indicator"></span>
+                <!-- Title Errors -->
+                {% if form.title.errors %}
+                <div class="text-danger">
+                    {% for error in form.title.errors %}
+                    <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                <!-- </div> -->
+            </div>
+
+            <!-- Course Description -->
+            <div class="form-group">
+                <div class="Course-label-box">
+                    {{ form.description.label(class="form-label", for="description") }}
+                    <span class="required-label">required (max 200 characters)</span>
+                </div>
+                {{ form.description(id="description", class="Course-description-box",
+                placeholder="Enter course description") }}
+                <span class="validation-indicator"></span>
+                <!-- Description Errors -->
+                {% if form.description.errors %}
+                <div class="text-danger">
+                    {% for error in form.description.errors %}
+                    <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Video URL -->
+            <div class="form-group">
+                <div class="Course-label-box">
+                    {{ form.video_url.label(class="form-label", for="video_url") }}
+                </div>
+                {{ form.video_url(id="video_url", class=" Course-input-box", placeholder="Enter video URL") }}
+                <span class="validation-indicator"></span>
+                <!-- Video URL Errors -->
+                {% if form.video_url.errors %}
+                <div class="text-danger">
+                    {% for error in form.video_url.errors %}
+                    <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Image URL -->
+            <div class="form-group">
+                <div class="Course-label-box">
+                    {{ form.image_url.label(class="form-label", for="image_url") }}
+                </div>
+                {{ form.image_url(id="image_url", class=" Course-input-box", placeholder="Enter image URL") }}
+                <span class="validation-indicator"></span>
+                <!-- Image URL Errors -->
+                {% if form.image_url.errors %}
+                <div class="text-danger">
+                    {% for error in form.image_url.errors %}
+                    <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Tags -->
+            <div class="form-group">
+                <div class="Course-label-box">
+                    <label for="tag" class="form-label">{{ form.tag.label }}</label>
+                </div>
+                {{ form.tag(class=" tag-box", multiple=True) }}
+                <span class="validation-indicator"></span>
+                {% if form.tag.errors %}
+                <div class="text-danger">
+                    {% for error in form.tag.errors %}
+                    <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            <!-- Submit Button -->
+            <div class="form-group mt-3">
+                {{ form.submit(class="btn btn-warning use-edit form-submit") }}
+            </div>
+        </form>
+
+        <!-- Back and Delete Buttons -->
+        <div class="edit-button">
+            <!-- Back Button -->
+            <button onclick="window.history.back()" class="btn btn-success form-back">
+                <i class="bi bi-arrow-left-circle">Back</i>
+            </button>
+
+            <!-- Delete Button -->
+            <form action="{{ url_for('main.delete_course', course_id=course.id) }}" method="POST">
+                <input type="hidden" name="next" value="{{ request.url }}">
+                <button type="submit" class="btn btn-danger"
+                    onclick="return confirm('Are you sure you want to delete this course?');">
+                    <i class="bi bi-trash"></i>Delete
+                </button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}

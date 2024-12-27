@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block title %}User_record{% endblock %}
+
+{% block content %}
+
+
+<div class="container tittle-box">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
+            <li class="breadcrumb-item">
+                <a class="link-body-emphasis" href="">
+                    <svg class="bi" width="16" height="16">
+                        <i class="bi bi-house-door-fill"></i>
+                    </svg>
+                    <span class="visually-hidden">Home</span>
+                </a>
+            </li>
+            <li class="breadcrumb-item">
+                <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">Admin Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                User Information
+            </li>
+        </ol>
+    </nav>
+</div>
+<!-- tittle -->
+<div class="fancy-tittle">user information</div>
+<!-- the table information -->
+<div class="container-fluid px-3 py-2 table-responsive table-box">
+    {% if users %}
+
+    <table class="table table-line">
+        <thead class="theadstyle">
+            <tr class="text-uppercase">
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            {% if user.role != 'manager' %}
+            <tr>
+                <td class="form-omi">{{ user.id }}</td>
+                <td class="form-omi">{{ user.username }}</td>
+                <td class="form-omi">{{ user.email }}</td>
+                <td class="form-omi">{{ user.role }}</td>
+                <td>
+                    <div class="fun-button">
+                        <!-- Edit button -->
+                        <form action="{{ url_for('main.edit_user', user_id=user.id)  }}" method="GET">
+                            <!-- The field passed into the current page causes the jump to stay on this page -->
+                            <input type="hidden" name="next" value="{{ request.url }}">
+                            <button type="submit" class="btn btn-primary">
+                                <!-- the pencil  comes from bootstrap -->
+                                <i class="bi bi-pencil">Edit</i>
+                            </button>
+                        </form>
+
+                        <!-- delete button -->
+                        <form action="{{ url_for('main.delete_user', user_id=user.id) }}" method="post"
+                            style="display:inline;">
+                            <button type="submit" class="btn btn-danger"
+                                onclick="return confirm('Are you sure you want to delete this user?');">
+                                <!-- the trash comes from bootstrap -->
+                                <i class="bi bi-trash">Delete</i></button>
+
+                        </form>
+
+                    </div>
+                </td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <h1>No assessments found.</h1>
+    {% endif %}
+
+    <div class="pagination justify-content-center">
+        {{ pagination.links }}
+    </div>
+
+</div>
+
+
+{% endblock %}

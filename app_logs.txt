@@ -1,0 +1,42 @@
+2024-12-26 14:08:13,821 - INFO - Exiting login_register
+2024-12-26 14:08:41,890 - INFO - Entering login_register
+2024-12-26 14:08:42,084 - INFO - New user Kenzo registered.
+2024-12-26 14:08:42,084 - INFO - Exiting login_register
+2024-12-26 14:08:42,244 - INFO - Entering login_register
+2024-12-26 14:08:42,245 - INFO - Exiting login_register
+2024-12-26 14:08:48,966 - INFO - Entering login_register
+2024-12-26 14:08:49,105 - INFO - User Kenzo logged in successfully.
+2024-12-26 14:08:49,105 - INFO - Exiting login_register
+2024-12-26 14:08:49,283 - INFO - Entering index
+2024-12-26 14:08:49,287 - INFO - Exiting index
+2024-12-26 15:00:22,686 - INFO - Entering index
+2024-12-26 15:00:22,692 - INFO - Exiting index
+2024-12-26 15:00:27,969 - INFO - User Kenzo logged out.
+2024-12-26 15:00:27,981 - INFO - Entering index
+2024-12-26 15:00:27,983 - INFO - Exiting index
+2024-12-26 15:00:29,842 - INFO - Entering login_register
+2024-12-26 15:00:29,843 - INFO - Exiting login_register
+2024-12-26 15:00:38,621 - INFO - Entering login_register
+2024-12-26 15:00:38,759 - INFO - User Kenzo logged in successfully.
+2024-12-26 15:00:38,760 - INFO - Exiting login_register
+2024-12-26 15:00:38,950 - INFO - Entering index
+2024-12-26 15:00:38,952 - INFO - Exiting index
+2024-12-26 15:01:37,278 - INFO - User Kenzo logged out.
+2024-12-26 15:01:37,287 - INFO - Entering index
+2024-12-26 15:01:37,289 - INFO - Exiting index
+2024-12-26 15:01:39,688 - INFO - Entering login_register
+2024-12-26 15:01:39,689 - INFO - Exiting login_register
+2024-12-26 15:01:45,722 - INFO - Entering login_register
+2024-12-26 15:01:45,862 - INFO - User Kenzo logged in successfully.
+2024-12-26 15:01:45,862 - INFO - Exiting login_register
+2024-12-26 15:01:46,058 - INFO - Entering index
+2024-12-26 15:01:46,060 - INFO - Exiting index
+2024-12-26 15:11:28,600 - INFO - Entering courses
+2024-12-26 15:11:28,616 - INFO - Exiting courses
+2024-12-26 15:17:00,053 - INFO - Entering index
+2024-12-26 15:17:00,058 - INFO - Exiting index
+2024-12-26 15:17:08,282 - INFO - User Kenzo logged out.
+2024-12-26 15:17:08,293 - INFO - Entering index
+2024-12-26 15:17:08,295 - INFO - Exiting index
+2024-12-27 01:39:46,895 - INFO - Entering index
+2024-12-27 01:39:46,908 - INFO - Exiting index
