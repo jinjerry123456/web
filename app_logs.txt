@@ -71,3 +71,37 @@
 2024-12-28 16:05:21,115 - INFO - Checking role for user Kim
 2024-12-28 16:05:21,116 - INFO - Entering create_course
 2024-12-28 16:05:21,117 - INFO - Exiting create_course
+2024-12-28 16:06:28,240 - INFO - Checking role for user Kim
+2024-12-28 16:06:28,240 - INFO - Entering create_course
+2024-12-28 16:06:28,241 - INFO - Exiting create_course
+2024-12-28 16:11:54,363 - INFO - Entering index
+2024-12-28 16:11:54,379 - INFO - Exiting index
+2024-12-28 16:11:58,105 - INFO - Checking role for user Kim
+2024-12-28 16:12:04,917 - INFO - Checking role for user Kim
+2024-12-28 16:12:07,589 - INFO - Checking role for user Kim
+2024-12-28 16:12:09,923 - INFO - Checking role for user Kim
+2024-12-28 17:03:32,808 - INFO - Entering index
+2024-12-28 17:03:32,829 - INFO - Exiting index
+2024-12-28 17:03:38,234 - INFO - Checking role for user Kim
+2024-12-28 17:03:38,235 - INFO - Entering user_record
+2024-12-28 17:03:38,241 - INFO - Exiting user_record
+2024-12-28 17:03:40,602 - INFO - Entering courses
+2024-12-28 17:03:40,611 - INFO - Exiting courses
+2024-12-28 17:03:43,477 - INFO - Checking role for user Kim
+2024-12-28 17:03:43,477 - INFO - Entering create_course
+2024-12-28 17:03:43,481 - INFO - Exiting create_course
+2024-12-28 17:03:55,002 - INFO - Checking role for user Kim
+2024-12-28 17:03:55,003 - INFO - Entering create_course
+2024-12-28 17:03:55,004 - INFO - Exiting create_course
+2024-12-28 17:04:12,660 - INFO - Entering courses
+2024-12-28 17:04:12,664 - INFO - Exiting courses
+2024-12-28 17:04:18,116 - INFO - Checking role for user Kim
+2024-12-28 17:04:18,117 - INFO - Entering create_course
+2024-12-28 17:04:18,119 - INFO - Exiting create_course
+2024-12-28 17:04:27,875 - INFO - Checking role for user Kim
+2024-12-28 17:04:27,875 - INFO - Entering create_course
+2024-12-28 17:04:27,876 - INFO - Exiting create_course
+2024-12-28 20:16:09,931 - INFO - Entering index
+2024-12-28 20:16:09,946 - INFO - Exiting index
+2024-12-28 20:17:36,291 - INFO - Entering index
+2024-12-28 20:17:36,297 - INFO - Exiting index
