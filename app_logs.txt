@@ -8,3 +8,48 @@
 2024-12-28 14:48:01,916 - INFO - Exiting index
 2024-12-28 15:16:31,236 - INFO - Entering index
 2024-12-28 15:16:31,271 - INFO - Exiting index
+2024-12-28 15:19:19,406 - INFO - Entering index
+2024-12-28 15:19:19,417 - INFO - Exiting index
+2024-12-28 15:19:26,527 - INFO - Checking role for user Teacher
+2024-12-28 15:19:26,528 - INFO - Entering create_course
+2024-12-28 15:19:26,531 - INFO - Exiting create_course
+2024-12-28 15:20:53,499 - INFO - Checking role for user Teacher
+2024-12-28 15:20:53,503 - INFO - Entering create_course
+2024-12-28 15:20:53,522 - INFO - Exiting create_course
+2024-12-28 15:20:53,530 - INFO - Checking role for user Teacher
+2024-12-28 15:20:53,530 - INFO - Entering create_course
+2024-12-28 15:20:53,531 - INFO - Exiting create_course
+2024-12-28 15:20:55,081 - INFO - Entering courses
+2024-12-28 15:20:55,092 - INFO - Exiting courses
+2024-12-28 15:20:57,469 - INFO - Entering courses
+2024-12-28 15:20:57,473 - INFO - Exiting courses
+2024-12-28 15:21:04,164 - INFO - Entering courses
+2024-12-28 15:21:04,168 - INFO - Exiting courses
+2024-12-28 15:21:07,274 - INFO - Entering courses
+2024-12-28 15:21:07,289 - INFO - Exiting courses
+2024-12-28 15:21:11,765 - INFO - Entering courses
+2024-12-28 15:21:11,771 - INFO - Exiting courses
+2024-12-28 15:21:17,562 - INFO - Entering courses
+2024-12-28 15:21:17,566 - INFO - Exiting courses
+2024-12-28 15:21:19,654 - INFO - Entering index
+2024-12-28 15:21:19,658 - INFO - Exiting index
+2024-12-28 15:21:27,693 - INFO - Entering index
+2024-12-28 15:21:30,292 - INFO - Entering course_detail for course_id: 11
+2024-12-28 15:21:30,305 - INFO - Exiting course_detail
+2024-12-28 15:21:33,323 - INFO - Entering toggle_like for course_id: 11
+2024-12-28 15:21:33,332 - INFO - Exiting toggle_like
+2024-12-28 15:21:39,464 - INFO - Entering add_comment for course_id: 11
+2024-12-28 15:21:39,469 - INFO - Exiting add_comment
+2024-12-28 15:21:39,474 - INFO - Entering course_detail for course_id: 11
+2024-12-28 15:21:39,477 - INFO - Exiting course_detail
+2024-12-28 15:23:02,180 - INFO - Entering my_courses
+2024-12-28 15:23:02,191 - INFO - Exiting my_courses
+2024-12-28 15:23:07,465 - INFO - User Teacher logged out.
+2024-12-28 15:23:07,471 - INFO - Entering index
+2024-12-28 15:23:07,474 - INFO - Exiting index
+2024-12-28 15:23:10,379 - INFO - Entering login_register
+2024-12-28 15:23:10,382 - INFO - Exiting login_register
+2024-12-28 15:23:17,798 - INFO - Entering index
+2024-12-28 15:23:17,801 - INFO - Exiting index
+2024-12-28 15:23:39,943 - INFO - Entering courses
+2024-12-28 15:23:39,948 - INFO - Exiting courses
