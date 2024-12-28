@@ -49,7 +49,8 @@ class User(UserMixin, db.Model):
     favorited_courses = db.relationship('Course',
                                         secondary=favorites,
                                         lazy='dynamic',
-                                        backref=db.backref('favorited_by', lazy='dynamic'))
+                                        backref=db.backref('favorited_by',
+                                                           lazy='dynamic'))
 
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
@@ -75,7 +76,8 @@ class Course(db.Model):
     # like by users
     liked_by = db.relationship('User',
                                secondary='likes', lazy='dynamic',
-                               backref=db.backref('liked_courses', lazy='dynamic'))
+                               backref=db.backref('liked_courses',
+                                                  lazy='dynamic'))
 
     # the tags
     tags = db.relationship('Tag',

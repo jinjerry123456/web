@@ -6,7 +6,7 @@
 }
 
 a {
-    color: rgb(113, 60, 0);
+    color: rgb(109, 63, 2);
     text-decoration: none;
     cursor: pointer;
 }
@@ -257,6 +257,12 @@ header .container .d-flex .text-end a:hover {
     min-height: 100vh;
 }
 
+@media (max-width: 767.98px) {
+    .main-box.main-color {
+        margin-top: 80px;
+    }
+}
+
 /* flash message ------------------------------ */
 .flash-message {
     position: fixed;
@@ -475,6 +481,7 @@ input.valid {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 30px;
     /* background-color: #bb8f9d9b; */
 }
@@ -1721,6 +1728,7 @@ input.valid {
     gap: 10px;
     outline: none;
     color: #6d3800;
+    font-size: 1rem;
     text-indent: 10px;
     border: 1.5px solid rgb(56, 25, 0);
     background-color: rgba(255, 255, 255, 0.304);
@@ -1965,6 +1973,20 @@ input.valid {
     margin: 0 10px;
 }
 
+.pagebox2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+.pagebox2 a {
+    color: #ffa071;
+}
+
+
+
 .pagebox2 li {
     /* display: inline-block; */
     margin-right: 15px !important;
@@ -2081,4 +2103,38 @@ input.valid {
     padding: 8px 15px;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+}
+
+/* the box with no-picture */
+
+.no-picture-rect {
+    width: 100%;
+    height: 100%;
+    fill: #55595c;
+}
+
+.text-fill {
+    x: 50%;
+    y: 50%;
+    fill: #eceeef;
+    dy: .3em;
+}
+
+/* the style of svg */
+.svg1 {
+    width: 16px;
+    height: 16px;
+}
+
+/* the style of tag */
+.tag-checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag-create-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
