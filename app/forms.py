@@ -1,11 +1,13 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, TextAreaField, BooleanField, SelectField, URLField
-from wtforms.validators import DataRequired, Email, EqualTo, Length, Regexp, Optional, URL
+from wtforms import StringField, PasswordField, SubmitField, TextAreaField
+from wtforms import SelectField, URLField
+from wtforms.validators import DataRequired, Email, EqualTo, Length, Regexp
+from wtforms.validators import Optional, URL
 from wtforms_sqlalchemy.fields import QuerySelectMultipleField
-from wtforms.widgets import CheckboxInput
+# from wtforms.widgets import CheckboxInput
 from wtforms import widgets
-from . import db
-from datetime import datetime
+# from . import db
+# from datetime import datetime
 from .models import Tag
 
 
@@ -15,24 +17,26 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     submit = SubmitField('Login')
 
+
 # the form for registration
-
-
 class RegistrationForm(FlaskForm):
     username = StringField('Username', validators=[
-                           DataRequired(message="Username is required."), Length(min=2, max=20)])
+                           DataRequired(message="Username is required."),
+                           Length(min=2, max=20)])
     email = StringField('Email', validators=[
                         DataRequired(message="Email is required"), Email()])
     password = PasswordField('Password', validators=[
         DataRequired(),
         Regexp(r'^(?=.*[A-Z])(?=.*\d).{6,}$',
-               message="Password must have at least one uppercase letter and one digit.")])
+               message="Password need least one uppercase letter and digit.")])
 
     confirm_password = PasswordField('Confirm Password',
-                                     validators=[DataRequired(), EqualTo('password')])
+                                     validators=[DataRequired(),
+                                                 EqualTo('password')])
     # choose a role teacher/student
     role = SelectField('Role', choices=[
-                       ('student', 'Student'), ('teacher', 'Teacher')], default='student')
+                       ('student', 'Student'), ('teacher', 'Teacher')],
+                       default='student')
     submit = SubmitField('Register')
 
 
@@ -64,7 +68,8 @@ class EditUserForm(FlaskForm):
                            DataRequired(), Length(min=2, max=20)])
     email = StringField('Email', validators=[DataRequired(), Email()])
     role = SelectField('Role', choices=[
-                       ('student', 'Student'), ('teacher', 'Teacher'), ('manager', 'Manager')])
+                       ('student', 'Student'), ('teacher', 'Teacher'),
+                       ('manager', 'Manager')])
     submit = SubmitField('Update')
 
 
@@ -103,7 +108,7 @@ class ChangePasswordForm(FlaskForm):
     new_password = PasswordField('New Password', validators=[
         DataRequired(),
         Regexp(r'^(?=.*[A-Z])(?=.*\d).{6,}$',
-               message="Password must have at least one uppercase letter and one digit.")
+               message="Password need least one uppercase letter and digit.")
     ])
     confirm_password = PasswordField('Confirm New Password', validators=[
         DataRequired(),

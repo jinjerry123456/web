@@ -2,7 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from config import Config
-from flask_migrate import Migrate
+# from flask_migrate import Migrate
 import logging
 from logging.handlers import RotatingFileHandler
 
@@ -10,6 +10,7 @@ from logging.handlers import RotatingFileHandler
 db = SQLAlchemy()
 login_manager = LoginManager()
 login_manager.login_view = 'auth.login'
+
 
 # create an app instance
 def create_app():
@@ -25,26 +26,29 @@ def create_app():
     # Set up logging to a txt file
     if not app.debug:
         # Create a rotating file handler to write logs to a .txt file
-        handler = RotatingFileHandler('app_logs.txt', maxBytes=10240, backupCount=3)
-        handler.setLevel(logging.INFO)  # Log level can be adjusted (e.g., DEBUG, INFO, WARNING, etc.)
-        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+        handler = RotatingFileHandler(
+            'app_logs.txt', maxBytes=10240, backupCount=3)
+        # Log level can be adjusted (e.g., DEBUG, INFO, WARNING, etc.)
+        handler.setLevel(logging.INFO)
+        formatter = logging.Formatter(
+            '%(asctime)s - %(levelname)s - %(message)s')
         handler.setFormatter(formatter)
         app.logger.addHandler(handler)
     else:
         print("Logging is not set up because the app is in debug mode.")
         handler = logging.StreamHandler()
         handler.setLevel(logging.DEBUG)  # For debug mode, set to DEBUG
-        formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+        formatter = logging.Formatter(
+            '%(asctime)s - %(levelname)s - %(message)s')
         handler.setFormatter(formatter)
         app.logger.addHandler(handler)
 
-        
     # Debugging: print current log level
-    print(f"Current log level: {logging.getLevelName(app.logger.level)}")  # Print the current log level
-
+    # Print the current log level
+    print(f"Current log level: {logging.getLevelName(app.logger.level)}")
 
     db.init_app(app)
-    migrate = Migrate(app, db)  
+    # migrate = Migrate(app, db)
     login_manager.init_app(app)
 
     # register the auth blueprint
@@ -67,10 +71,9 @@ def create_admin_user():
     if not admin:
         # create an admin account
         admin = User(username='Kim', email='Kim@kim.com', role='manager')
-        admin.set_password('Kim721')  
+        admin.set_password('Kim721')
         db.session.add(admin)
         db.session.commit()
         print("Admin account created successfully!")
     else:
         print("Admin account already exists.")
-

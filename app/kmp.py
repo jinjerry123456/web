@@ -19,8 +19,8 @@ def kmp_search(text, pattern):
 
     # KMP search algorithm
     lps = compute_lps(pattern)
-    i = 0  
-    j = 0  
+    i = 0
+    j = 0
 
     # search the pattern
     while i < len(text):
@@ -30,11 +30,11 @@ def kmp_search(text, pattern):
 
         # find the pattern
         if j == len(pattern):
-            return True  
+            return True
         elif i < len(text) and pattern[j] != text[i]:
             if j != 0:
                 j = lps[j - 1]
             else:
                 i += 1
     # not found
-    return False  
+    return False

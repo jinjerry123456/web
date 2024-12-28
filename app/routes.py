@@ -1,9 +1,12 @@
-from flask import Blueprint, render_template, flash, redirect, url_for, request, abort, jsonify, current_app
+from flask import Blueprint, render_template, flash, redirect, url_for
+from flask import request, abort, jsonify, current_app
 from flask_paginate import Pagination, get_page_args
 from flask_login import login_user, logout_user, login_required, current_user
 from app import db
-from app.models import User, Course, Tag, favorites, Comment
-from app.forms import LoginForm, RegistrationForm, CourseForm, EditUserForm, CreateCourseForm, CommentForm, ChangePasswordForm
+from app.models import User, Course, Tag, Comment
+# from app.models import favorites
+from app.forms import LoginForm, RegistrationForm, CourseForm, EditUserForm
+from app.forms import CreateCourseForm, CommentForm, ChangePasswordForm
 from functools import wraps
 from .kmp import kmp_search
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -28,9 +31,14 @@ def role_required(*required_roles):
         def decorated_function(*args, **kwargs):
             current_app.logger.info(
                 f'Checking role for user {current_user.username}')
-            if not current_user.is_authenticated or current_user.role not in required_roles:
+            if not current_user.is_authenticated:
                 current_app.logger.warning(
-                    f'User {current_user.username} does not have the required roles: {required_roles}')
+                    f'User {current_user.username} is not authenticated')
+                abort(403)
+            if current_user.role not in required_roles:
+                current_app.logger.warning(
+                    f'User {current_user.username} does not have '
+                    f'required roles: {required_roles}')
                 abort(403)
             return f(*args, **kwargs)
         return decorated_function
@@ -51,9 +59,11 @@ def index():
         matching_courses = []
         for course in courses:
             # use the KMP search algorithm
-            if kmp_search(course.title.lower(), query.lower()) or kmp_search(course.description.lower(), query.lower()):
+            if (kmp_search(course.title.lower(), query.lower()) or
+                    kmp_search(course.description.lower(), query.lower())):
                 matching_courses.append(course)
-        return render_template('index.html', courses=matching_courses, query=query)
+        return render_template('index.html', courses=matching_courses,
+                               query=query)
 
     else:
         # get the latest 6 courses
@@ -90,7 +100,8 @@ def view_logs():
         logs = "No log file found."
         total_pages = 0
 
-    return render_template('log.html', logs=logs, page=page, total_pages=total_pages)
+    return render_template('log.html', logs=logs, page=page,
+                           total_pages=total_pages)
 
 
 # login and register page
@@ -118,7 +129,7 @@ def login_register():
             return redirect(next_page or url_for('main.index'))
         else:
             current_app.logger.warning(
-                f'Failed login attempt for username: {login_form.username.data}.')
+                f'Failed login for username: {login_form.username.data}.')
             flash('Invalid username or password', 'danger')
 
     if register_form.validate_on_submit() and 'register' in request.form:
@@ -132,7 +143,8 @@ def login_register():
             flash('Email already exists', 'danger')
         else:
             user = User(username=register_form.username.data,
-                        email=register_form.email.data, role=register_form.role.data)
+                        email=register_form.email.data,
+                        role=register_form.role.data)
             user.set_password(register_form.password.data)
             db.session.add(user)
             db.session.commit()
@@ -142,10 +154,11 @@ def login_register():
             return redirect(url_for('main.login_register'))
     else:
         if 'register' in request.form:
-            flash('Registration failed. Please check the form for errors.', 'danger')
+            flash('Registration failed. Please check errors.', 'danger')
 
     current_app.logger.info('Exiting login_register')
-    return render_template('login.html', login_form=login_form, register_form=register_form)
+    return render_template('login.html', login_form=login_form,
+                           register_form=register_form)
 
 
 # change password
@@ -154,7 +167,8 @@ def login_register():
 def change_password():
     form = ChangePasswordForm()
     if form.validate_on_submit():
-        if not check_password_hash(current_user.password_hash, form.old_password.data):
+        if not check_password_hash(current_user.password_hash,
+                                   form.old_password.data):
             flash('Old password is incorrect', 'danger')
         else:
             current_user.password_hash = generate_password_hash(
@@ -185,7 +199,7 @@ def courses():
     # if tags are selected, filter courses by tags
     if tag_ids:
         tag_ids = [int(tag_id) for tag_id in tag_ids]
-        # use the 'any' method to filter courses that have any of the selected tags
+        # use 'any' method to filter courses that have any of the selected tags
         courses = Course.query.filter(Course.tags.any(
             Tag.id.in_(tag_ids))).paginate(page=page, per_page=9)
     else:
@@ -222,7 +236,8 @@ def course_detail(course_id):
         current_app.logger.info('Exiting course_detail')
         return redirect(url_for('main.course_detail', course_id=course.id))
     current_app.logger.info('Exiting course_detail')
-    return render_template('course_detail.html', course=course, form=form, comments=comments)
+    return render_template('course_detail.html', course=course, form=form,
+                           comments=comments)
 
 # add comment
 
@@ -331,7 +346,8 @@ def user_record():
     pagination = Pagination(page=page, total=total,
                             per_page=per_page, css_framework='bootstrap4')
     current_app.logger.info('Exiting user_record')
-    return render_template('user_record.html', users=users, pagination=pagination)
+    return render_template('user_record.html', users=users,
+                           pagination=pagination)
 
 # delete the user
 
@@ -359,11 +375,13 @@ def edit_user(user_id):
     form = EditUserForm()
     if form.validate_on_submit():
         # Check if the username or email is already taken by another user
-        existing_user = User.query.filter((User.username == form.username.data) | (
-            User.email == form.email.data)).filter(User.id != user_id).first()
+        existing_user = User.query.filter(
+            (User.username == form.username.data) | (
+                User.email == form.email.data)).filter(
+                    User.id != user_id).first()
         if existing_user:
             flash(
-                'Username or email already exists. Please choose a different one.', 'danger')
+                'Username or email already exists.', 'danger')
             current_app.logger.info('Username or email already exists.')
         else:
             user.username = form.username.data
@@ -405,10 +423,10 @@ def create_course():
         db.session.commit()
         flash('Course created successfully!', 'success')
         current_app.logger.info('Exiting create_course')
-        return redirect(url_for('main.course_record'))
+        return redirect(url_for('main.create_course'))
         # when submit the form, the page will be redirected to the course_list
     elif request.method == 'POST':
-        flash('Error creating course. Please check the form for errors.', 'danger')
+        flash('Error creating course. Please check the errors.', 'danger')
 
     current_app.logger.info('Exiting create_course')
     return render_template('create_course.html', form=form)
@@ -426,7 +444,8 @@ def course_record():
         page=page, per_page=per_page, error_out=False)
     courses = pagination.items
     current_app.logger.info('Exiting course_record')
-    return render_template('course_record.html', courses=courses, pagination=pagination)
+    return render_template('course_record.html', courses=courses,
+                           pagination=pagination)
 
 # edit the course
 
@@ -469,7 +488,8 @@ def course_comments(course_id):
     # get the comments
     comments = Comment.query.filter_by(course_id=course.id).all()
     current_app.logger.info('Exiting course_comments')
-    return render_template('course_comments.html', course=course, comments=comments)
+    return render_template('course_comments.html', course=course,
+                           comments=comments)
 
 
 # delete the comment
@@ -483,7 +503,8 @@ def delete_comment(comment_id):
     db.session.commit()
     flash('Comment deleted successfully!', 'success')
     current_app.logger.info('Exiting delete_comment')
-    return redirect(url_for('main.course_comments', course_id=comment.course_id))
+    return redirect(url_for('main.course_comments',
+                            course_id=comment.course_id))
 
 
 # delete the course
