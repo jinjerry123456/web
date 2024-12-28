@@ -7,7 +7,7 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
             <li class="breadcrumb-item">
-                <a class="link-body-emphasis" href="">
+                <a class="link-body-emphasis" href="{{ url_for('main.index') }}">
                     <svg class="bi" width="16" height="16">
                         <i class="bi bi-house-door-fill"></i>
                     </svg>
@@ -25,7 +25,9 @@
 </div>
 
 <!-- tittle -->
-<div class="fancy-tittle">Course Information</div>
+<div class="fancy-tittle">
+    <h1 class="fancy-tittle">Course Information</h1>
+</div>
 
 <!-- the table information -->
 <div class="container-fluid px-3 py-2 table-responsive table-box">

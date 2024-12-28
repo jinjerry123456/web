@@ -6,7 +6,7 @@
 }
 
 a {
-    color: rgb(255, 190, 116);
+    color: rgb(113, 60, 0);
     text-decoration: none;
     cursor: pointer;
 }
@@ -1800,7 +1800,7 @@ input.valid {
 }
 
 .comment-list strong {
-    color: #682f04b0;
+    color: #682f04fa;
     font-weight: 600;
     font-size: 1rem;
 }

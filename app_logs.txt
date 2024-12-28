@@ -1,55 +1,73 @@
-2024-12-28 14:47:41,736 - INFO - Checking role for user Kim
-2024-12-28 14:47:41,739 - INFO - Entering user_record
-2024-12-28 14:47:41,742 - INFO - Exiting user_record
-2024-12-28 14:47:44,223 - INFO - Checking role for user Kim
-2024-12-28 14:47:44,224 - INFO - Entering user_record
-2024-12-28 14:47:44,226 - INFO - Exiting user_record
-2024-12-28 14:48:01,912 - INFO - Entering index
-2024-12-28 14:48:01,916 - INFO - Exiting index
-2024-12-28 15:16:31,236 - INFO - Entering index
-2024-12-28 15:16:31,271 - INFO - Exiting index
-2024-12-28 15:19:19,406 - INFO - Entering index
-2024-12-28 15:19:19,417 - INFO - Exiting index
-2024-12-28 15:19:26,527 - INFO - Checking role for user Teacher
-2024-12-28 15:19:26,528 - INFO - Entering create_course
-2024-12-28 15:19:26,531 - INFO - Exiting create_course
-2024-12-28 15:20:53,499 - INFO - Checking role for user Teacher
-2024-12-28 15:20:53,503 - INFO - Entering create_course
-2024-12-28 15:20:53,522 - INFO - Exiting create_course
-2024-12-28 15:20:53,530 - INFO - Checking role for user Teacher
-2024-12-28 15:20:53,530 - INFO - Entering create_course
-2024-12-28 15:20:53,531 - INFO - Exiting create_course
-2024-12-28 15:20:55,081 - INFO - Entering courses
-2024-12-28 15:20:55,092 - INFO - Exiting courses
-2024-12-28 15:20:57,469 - INFO - Entering courses
-2024-12-28 15:20:57,473 - INFO - Exiting courses
-2024-12-28 15:21:04,164 - INFO - Entering courses
-2024-12-28 15:21:04,168 - INFO - Exiting courses
-2024-12-28 15:21:07,274 - INFO - Entering courses
-2024-12-28 15:21:07,289 - INFO - Exiting courses
-2024-12-28 15:21:11,765 - INFO - Entering courses
-2024-12-28 15:21:11,771 - INFO - Exiting courses
-2024-12-28 15:21:17,562 - INFO - Entering courses
-2024-12-28 15:21:17,566 - INFO - Exiting courses
-2024-12-28 15:21:19,654 - INFO - Entering index
-2024-12-28 15:21:19,658 - INFO - Exiting index
-2024-12-28 15:21:27,693 - INFO - Entering index
-2024-12-28 15:21:30,292 - INFO - Entering course_detail for course_id: 11
-2024-12-28 15:21:30,305 - INFO - Exiting course_detail
-2024-12-28 15:21:33,323 - INFO - Entering toggle_like for course_id: 11
-2024-12-28 15:21:33,332 - INFO - Exiting toggle_like
-2024-12-28 15:21:39,464 - INFO - Entering add_comment for course_id: 11
-2024-12-28 15:21:39,469 - INFO - Exiting add_comment
-2024-12-28 15:21:39,474 - INFO - Entering course_detail for course_id: 11
-2024-12-28 15:21:39,477 - INFO - Exiting course_detail
-2024-12-28 15:23:02,180 - INFO - Entering my_courses
-2024-12-28 15:23:02,191 - INFO - Exiting my_courses
-2024-12-28 15:23:07,465 - INFO - User Teacher logged out.
-2024-12-28 15:23:07,471 - INFO - Entering index
-2024-12-28 15:23:07,474 - INFO - Exiting index
-2024-12-28 15:23:10,379 - INFO - Entering login_register
-2024-12-28 15:23:10,382 - INFO - Exiting login_register
-2024-12-28 15:23:17,798 - INFO - Entering index
-2024-12-28 15:23:17,801 - INFO - Exiting index
-2024-12-28 15:23:39,943 - INFO - Entering courses
-2024-12-28 15:23:39,948 - INFO - Exiting courses
+2024-12-28 16:00:24,196 - INFO - Exiting create_course
+2024-12-28 16:00:36,755 - INFO - Checking role for user Kim
+2024-12-28 16:00:36,755 - INFO - Entering create_course
+2024-12-28 16:00:36,756 - INFO - Exiting create_course
+2024-12-28 16:02:52,218 - INFO - Checking role for user Kim
+2024-12-28 16:02:52,219 - INFO - Entering create_course
+2024-12-28 16:02:52,220 - INFO - Exiting create_course
+2024-12-28 16:03:00,343 - INFO - Checking role for user Kim
+2024-12-28 16:03:00,355 - INFO - Entering create_course
+2024-12-28 16:03:00,357 - INFO - Exiting create_course
+2024-12-28 16:03:20,451 - INFO - Checking role for user Kim
+2024-12-28 16:03:20,451 - INFO - Entering create_course
+2024-12-28 16:03:20,452 - INFO - Exiting create_course
+2024-12-28 16:03:33,900 - INFO - Checking role for user Kim
+2024-12-28 16:03:33,901 - INFO - Entering create_course
+2024-12-28 16:03:33,902 - INFO - Exiting create_course
+2024-12-28 16:03:44,373 - INFO - Checking role for user Kim
+2024-12-28 16:03:44,374 - INFO - Entering create_course
+2024-12-28 16:03:44,375 - INFO - Exiting create_course
+2024-12-28 16:03:56,280 - INFO - Checking role for user Kim
+2024-12-28 16:03:56,280 - INFO - Entering create_course
+2024-12-28 16:03:56,312 - INFO - Exiting create_course
+2024-12-28 16:03:56,322 - INFO - Checking role for user Kim
+2024-12-28 16:03:56,323 - INFO - Entering create_course
+2024-12-28 16:03:56,324 - INFO - Exiting create_course
+2024-12-28 16:04:26,490 - INFO - Checking role for user Kim
+2024-12-28 16:04:26,491 - INFO - Entering create_course
+2024-12-28 16:04:26,491 - INFO - Exiting create_course
+2024-12-28 16:04:31,425 - INFO - Checking role for user Kim
+2024-12-28 16:04:31,425 - INFO - Entering create_course
+2024-12-28 16:04:31,432 - INFO - Exiting create_course
+2024-12-28 16:04:31,437 - INFO - Checking role for user Kim
+2024-12-28 16:04:31,438 - INFO - Entering create_course
+2024-12-28 16:04:31,440 - INFO - Exiting create_course
+2024-12-28 16:04:36,698 - INFO - Checking role for user Kim
+2024-12-28 16:04:36,699 - INFO - Entering course_record
+2024-12-28 16:04:36,711 - INFO - Exiting course_record
+2024-12-28 16:04:39,434 - INFO - Checking role for user Kim
+2024-12-28 16:04:39,434 - INFO - Entering course_record
+2024-12-28 16:04:39,439 - INFO - Exiting course_record
+2024-12-28 16:04:44,952 - INFO - Checking role for user Kim
+2024-12-28 16:04:44,953 - INFO - Entering delete_course for course_id: 22
+2024-12-28 16:04:44,969 - INFO - Exiting delete_course
+2024-12-28 16:04:44,976 - INFO - Checking role for user Kim
+2024-12-28 16:04:44,977 - INFO - Entering course_record
+2024-12-28 16:04:44,980 - INFO - Exiting course_record
+2024-12-28 16:04:46,997 - INFO - Checking role for user Kim
+2024-12-28 16:04:46,998 - INFO - Entering course_record
+2024-12-28 16:04:47,002 - INFO - Exiting course_record
+2024-12-28 16:04:50,488 - INFO - Checking role for user Kim
+2024-12-28 16:04:50,490 - INFO - Entering delete_course for course_id: 21
+2024-12-28 16:04:50,518 - INFO - Exiting delete_course
+2024-12-28 16:04:50,526 - INFO - Checking role for user Kim
+2024-12-28 16:04:50,527 - INFO - Entering course_record
+2024-12-28 16:04:50,530 - INFO - Exiting course_record
+2024-12-28 16:04:51,979 - INFO - Checking role for user Kim
+2024-12-28 16:04:51,980 - INFO - Entering create_course
+2024-12-28 16:04:51,981 - INFO - Exiting create_course
+2024-12-28 16:05:05,634 - INFO - Checking role for user Kim
+2024-12-28 16:05:05,634 - INFO - Entering create_course
+2024-12-28 16:05:05,643 - INFO - Exiting create_course
+2024-12-28 16:05:05,648 - INFO - Checking role for user Kim
+2024-12-28 16:05:05,649 - INFO - Entering create_course
+2024-12-28 16:05:05,650 - INFO - Exiting create_course
+2024-12-28 16:05:13,323 - INFO - Checking role for user Kim
+2024-12-28 16:05:13,324 - INFO - Entering course_record
+2024-12-28 16:05:13,330 - INFO - Exiting course_record
+2024-12-28 16:05:17,229 - INFO - Checking role for user Kim
+2024-12-28 16:05:17,230 - INFO - Entering course_record
+2024-12-28 16:05:17,234 - INFO - Exiting course_record
+2024-12-28 16:05:21,115 - INFO - Checking role for user Kim
+2024-12-28 16:05:21,116 - INFO - Entering create_course
+2024-12-28 16:05:21,117 - INFO - Exiting create_course

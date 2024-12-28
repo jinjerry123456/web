@@ -9,11 +9,14 @@
         <form id="tag-filter-form" method="get" action="{{ url_for('main.courses') }}">
             <div class="tag-checkbox-container tag-filter-box">
                 {% for tag in tags %}
-                <div class="tag-checkbox tag-filter">
-                    <input type="checkbox" name="tag" value="{{ tag.id }}" id="tag-{{ tag.id }}" {% if tag.id in
-                        selected_tags %}checked{% endif %}>
-                    <label for="tag-{{ tag.id }}">{{ tag.name }}</label>
-                </div>
+                <fieldset>
+                    <legend>📖 🏷️</legend>
+                    <div class="tag-checkbox tag-filter">
+                        <input type="checkbox" name="tag" value="{{ tag.id }}" id="tag-{{ tag.id }}" {% if tag.id in
+                            selected_tags %}checked{% endif %}>
+                        <label for="tag-{{ tag.id }}">{{ tag.name }}</label>
+                    </div>
+                </fieldset>
                 {% endfor %}
             </div>
             <div class="filter-submit">

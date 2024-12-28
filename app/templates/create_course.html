@@ -51,7 +51,7 @@
             <div class="form-group">
                 <div class="Course-label-box">
                     {{ form.description.label(class="form-label", for="description") }}
-                    <span class="required-label">required (max 200 characters)</span>
+                    <span class="required-label"> (max 200 characters)</span>
                 </div>
                 {{ form.description(id="description", class="Course-description-box",
                 placeholder="Enter course description") }}
@@ -104,7 +104,7 @@
                 <div class="Course-label-box">
                     {{ form.tag.label(class="form-label", for="tag") }}
                 </div>
-                {{ form.tag(class="tag-box", multiple=True) }}
+                {{ form.tag(id="tag", class="tag-box", multiple=True) }}
                 <span class="validation-indicator"></span>
                 {% if form.tag.errors %}
                 <div class="text-danger">
