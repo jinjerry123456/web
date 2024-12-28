@@ -84,23 +84,45 @@ def view_logs():
     per_page = 20
     start_line = (page - 1) * per_page
 
+    user_logs = ""
+    system_logs = ""
+    total_pages_user = 0
+    total_pages_system = 0
+
     try:
-        with open('app_logs.txt', 'r') as file:
+        with open('user_logs.txt', 'r') as file:
             lines = file.readlines()
         if start_line >= len(lines):
-            logs = "No more logs available."
+            user_logs = "No more user logs available."
         else:
-            logs = ''.join(lines[start_line:start_line + per_page])
+            user_logs = ''.join(lines[start_line:start_line + per_page])
 
-        total_logs = len(lines)
-        total_pages = (total_logs // per_page) + \
-            (1 if total_logs % per_page > 0 else 0)
+        total_logs_user = len(lines)
+        total_pages_user = (total_logs_user // per_page) + \
+            (1 if total_logs_user % per_page > 0 else 0)
 
     except FileNotFoundError:
-        logs = "No log file found."
-        total_pages = 0
+        user_logs = "No user log file found."
 
-    return render_template('log.html', logs=logs, page=page,
+    try:
+        with open('system_logs.txt', 'r') as file:
+            lines = file.readlines()
+        if start_line >= len(lines):
+            system_logs = "No more system logs available."
+        else:
+            system_logs = ''.join(lines[start_line:start_line + per_page])
+
+        total_logs_system = len(lines)
+        total_pages_system = (total_logs_system // per_page) + \
+            (1 if total_logs_system % per_page > 0 else 0)
+
+    except FileNotFoundError:
+        system_logs = "No system log file found."
+
+    total_pages = max(total_pages_user, total_pages_system)
+
+    return render_template('log.html', user_logs=user_logs,
+                           system_logs=system_logs, page=page,
                            total_pages=total_pages)
 
 

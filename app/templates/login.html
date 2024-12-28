@@ -11,7 +11,7 @@
     </div>
 
     <!-- register -->
-    <div class="register-form">
+    <div class="register-form col-12 col-md-6">
         <div class="title-box">
             <h1>Register</h1>
         </div>
@@ -19,10 +19,8 @@
             {{ register_form.hidden_tag() }}
             <div class="form-group">
                 <div class="input-box">
-                    <div class="label-box">
-                        <div class="label-box">{{ register_form.username.label(class="form-label", for="username") }}
-                            <div class="required-label">required</div>
-                        </div>
+                    <div class="label-box">{{ register_form.username.label(class="form-label", for="username") }}
+                        <div class="required-label">required</div>
                     </div>
                     {{ register_form.username(id="username", class="form-control",
                     placeholder="Length from 2 to 20") }}
@@ -112,7 +110,7 @@
         </form>
     </div>
     <!-- login -->
-    <div class="login-form">
+    <div class="login-form col-12 col-md-6">
         <!-- tittle -->
         <div class="tittle-log">Start studying~~</div>
         <div class="title-box theme-font">
@@ -122,11 +120,11 @@
             {{ login_form.hidden_tag() }}
             <div class="form-group">
                 <div class="input-box">
-                    <div class="label-box">{{ login_form.username.label(class="form-label", for="username") }}
+                    <div class="label-box">{{ login_form.username.label(class="form-label", for="log_username") }}
                         <div class="required-label">required</div>
                     </div>
                     <div class="form-input">
-                        {{ login_form.username(id="username", class="form-control",
+                        {{ login_form.username(id="log_username", class="form-control",
                         placeholder="Length from 2 to 20") }}
                         <!-- print the error -->
                         {% if login_form.username.errors %}
@@ -140,10 +138,10 @@
                 </div>
                 <div class="input-box">
                     <div class="label-box">
-                        {{ login_form.password.label(class="form-label", for="confirm_password") }}
+                        {{ login_form.password.label(class="form-label", for="log_password") }}
                         <div class="required-label">required</div>
                     </div>
-                    {{ login_form.password(id="password", class="form-control",
+                    {{ login_form.password(id="log_password", class="form-control",
                     placeholder="Valid password: e.g. Abc123 (Minimal length: 6)") }}
                     <!-- print the error -->
                     {% if login_form.password.errors %}

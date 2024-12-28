@@ -25,15 +25,24 @@ def create_app():
 
     # Set up logging to a txt file
     if not app.debug:
-        # Create a rotating file handler to write logs to a .txt file
-        handler = RotatingFileHandler(
-            'app_logs.txt', maxBytes=10240, backupCount=3)
-        # Log level can be adjusted (e.g., DEBUG, INFO, WARNING, etc.)
-        handler.setLevel(logging.INFO)
-        formatter = logging.Formatter(
+        # Create a rotating file handler to write user logs to a .txt file
+        user_handler = RotatingFileHandler(
+            'user_logs.txt', maxBytes=10240, backupCount=1)
+        user_handler.setLevel(logging.INFO)
+        user_formatter = logging.Formatter(
             '%(asctime)s - %(levelname)s - %(message)s')
-        handler.setFormatter(formatter)
-        app.logger.addHandler(handler)
+        user_handler.setFormatter(user_formatter)
+        app.logger.addHandler(user_handler)
+
+        # Create a rotating file handler to write system logs to a .txt file
+        system_handler = RotatingFileHandler(
+            'system_logs.txt', maxBytes=10240, backupCount=1)
+        system_handler.setLevel(logging.INFO)
+        system_formatter = logging.Formatter(
+            '%(asctime)s - %(message)s')
+        system_handler.setFormatter(system_formatter)
+        logging.getLogger('werkzeug').addHandler(system_handler)
+
     else:
         print("Logging is not set up because the app is in debug mode.")
         handler = logging.StreamHandler()
