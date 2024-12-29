@@ -1,0 +1,28 @@
+2024-12-29 16:29:58,485 - INFO - Entering courses
+2024-12-29 16:29:58,500 - INFO - Exiting courses
+2024-12-29 16:30:01,759 - INFO - Entering index
+2024-12-29 16:30:01,765 - INFO - Exiting index
+2024-12-29 16:30:03,985 - INFO - Entering login_register
+2024-12-29 16:30:03,992 - INFO - Exiting login_register
+2024-12-29 16:30:11,612 - INFO - Entering login_register
+2024-12-29 16:30:11,816 - INFO - User Kim logged in successfully.
+2024-12-29 16:30:11,816 - INFO - Exiting login_register
+2024-12-29 16:30:12,050 - INFO - Entering index
+2024-12-29 16:30:12,052 - INFO - Exiting index
+2024-12-29 16:30:13,953 - INFO - Entering courses
+2024-12-29 16:30:13,956 - INFO - Exiting courses
+2024-12-29 16:30:19,762 - INFO - Entering courses
+2024-12-29 16:30:19,773 - INFO - Exiting courses
+2024-12-29 16:30:23,493 - INFO - Entering course_detail for course_id: 8
+2024-12-29 16:30:23,504 - INFO - Exiting course_detail
+2024-12-29 16:30:40,208 - INFO - Entering add_comment for course_id: 8
+2024-12-29 16:30:40,220 - INFO - Exiting add_comment
+2024-12-29 16:30:40,238 - INFO - Entering course_detail for course_id: 8
+2024-12-29 16:30:40,247 - INFO - Exiting course_detail
+2024-12-29 16:30:53,179 - INFO - Checking role for user Kim
+2024-12-29 16:31:03,289 - INFO - Checking role for user Kim
+2024-12-29 16:34:30,062 - INFO - Checking role for user Kim
+2024-12-29 16:34:36,573 - INFO - Checking role for user Kim
+2024-12-29 16:34:43,391 - INFO - Checking role for user Kim
+2024-12-29 16:34:54,021 - INFO - Checking role for user Kim
+2024-12-29 16:34:57,573 - INFO - Checking role for user Kim

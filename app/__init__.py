@@ -5,6 +5,14 @@ from config import Config
 # from flask_migrate import Migrate
 import logging
 from logging.handlers import RotatingFileHandler
+import os
+
+# get the relavent path
+base_dir = os.path.abspath(os.path.dirname(__file__))
+
+# set the path of the log file
+user_log_file = os.path.join(base_dir, 'static/logs/user_logs.txt')
+system_log_file = os.path.join(base_dir, 'static/logs/system_logs.txt')
 
 # initialize the db
 db = SQLAlchemy()
@@ -27,7 +35,7 @@ def create_app():
     if not app.debug:
         # Create a rotating file handler to write user logs to a .txt file
         user_handler = RotatingFileHandler(
-            'user_logs.txt', maxBytes=10240, backupCount=1)
+            user_log_file, maxBytes=10240, backupCount=1)
         user_handler.setLevel(logging.INFO)
         user_formatter = logging.Formatter(
             '%(asctime)s - %(levelname)s - %(message)s')
@@ -36,7 +44,7 @@ def create_app():
 
         # Create a rotating file handler to write system logs to a .txt file
         system_handler = RotatingFileHandler(
-            'system_logs.txt', maxBytes=10240, backupCount=1)
+            system_log_file, maxBytes=10240, backupCount=1)
         system_handler.setLevel(logging.INFO)
         system_formatter = logging.Formatter(
             '%(asctime)s - %(message)s')

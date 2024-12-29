@@ -10,6 +10,14 @@ from app.forms import CreateCourseForm, CommentForm, ChangePasswordForm
 from functools import wraps
 from .kmp import kmp_search
 from werkzeug.security import generate_password_hash, check_password_hash
+import os
+
+# get the relevant path
+base_dir = os.path.abspath(os.path.dirname(__file__))
+
+# set the path of the log file
+user_log_file = os.path.join(base_dir, 'static/logs/user_logs.txt')
+system_log_file = os.path.join(base_dir, 'static/logs/system_logs.txt')
 
 main = Blueprint('main', __name__)
 
@@ -89,8 +97,9 @@ def view_logs():
     total_pages_user = 0
     total_pages_system = 0
 
+    # print the use_log
     try:
-        with open('user_logs.txt', 'r') as file:
+        with open(user_log_file, 'r') as file:
             lines = file.readlines()
         if start_line >= len(lines):
             user_logs = "No more user logs available."
@@ -104,8 +113,9 @@ def view_logs():
     except FileNotFoundError:
         user_logs = "No user log file found."
 
+    # print the system log
     try:
-        with open('system_logs.txt', 'r') as file:
+        with open(system_log_file, 'r') as file:
             lines = file.readlines()
         if start_line >= len(lines):
             system_logs = "No more system logs available."
