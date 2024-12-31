@@ -1,77 +1,62 @@
-2024-12-29 16:33:19,076 -  * Restarting with watchdog (fsevents)
-2024-12-29 16:33:20,745 -  * Debugger is active!
-2024-12-29 16:33:20,772 -  * Debugger PIN: 896-616-007
-2024-12-29 16:33:21,072 -  * Detected change in '/Users/ghostguy/Desktop/web 12.31/web/app/routes.py', reloading
-2024-12-29 16:33:22,260 -  * Restarting with watchdog (fsevents)
-2024-12-29 16:33:23,180 -  * Debugger is active!
-2024-12-29 16:33:23,204 -  * Debugger PIN: 896-616-007
-2024-12-29 16:33:51,090 -  * Detected change in '/Users/ghostguy/Desktop/web 12.31/web/app/routes.py', reloading
-2024-12-29 16:33:51,114 -  * Detected change in '/Users/ghostguy/Desktop/web 12.31/web/app/routes.py', reloading
-2024-12-29 16:33:52,274 -  * Restarting with watchdog (fsevents)
-2024-12-29 16:33:53,237 -  * Debugger is active!
-2024-12-29 16:33:53,262 -  * Debugger PIN: 896-616-007
-2024-12-29 16:34:12,267 -  * Detected change in '/Users/ghostguy/Desktop/web 12.31/web/app/routes.py', reloading
-2024-12-29 16:34:12,279 -  * Detected change in '/Users/ghostguy/Desktop/web 12.31/web/app/routes.py', reloading
-2024-12-29 16:34:13,465 -  * Restarting with watchdog (fsevents)
-2024-12-29 16:34:14,490 -  * Debugger is active!
-2024-12-29 16:34:14,511 -  * Debugger PIN: 896-616-007
-2024-12-29 16:34:19,833 -  * Detected change in '/Users/ghostguy/Desktop/web 12.31/web/app/routes.py', reloading
-2024-12-29 16:34:19,856 -  * Detected change in '/Users/ghostguy/Desktop/web 12.31/web/app/routes.py', reloading
-2024-12-29 16:34:19,857 -  * Detected change in '/Users/ghostguy/Desktop/web 12.31/web/app/routes.py', reloading
-2024-12-29 16:34:21,047 -  * Restarting with watchdog (fsevents)
-2024-12-29 16:34:22,109 -  * Debugger is active!
-2024-12-29 16:34:22,132 -  * Debugger PIN: 896-616-007
-2024-12-29 16:34:30,079 - 127.0.0.1 - - [29/Dec/2024 16:34:30] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
-2024-12-29 16:34:30,104 - 127.0.0.1 - - [29/Dec/2024 16:34:30] "GET /logs?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-2024-12-29 16:34:30,105 - 127.0.0.1 - - [29/Dec/2024 16:34:30] "GET /logs?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-2024-12-29 16:34:30,116 - 127.0.0.1 - - [29/Dec/2024 16:34:30] "GET /logs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-2024-12-29 16:34:30,184 - 127.0.0.1 - - [29/Dec/2024 16:34:30] "[36mGET /logs?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2024-12-29 16:34:33,837 -  * Detected change in '/Users/ghostguy/Desktop/web 12.31/web/app/routes.py', reloading
-2024-12-29 16:34:33,860 -  * Detected change in '/Users/ghostguy/Desktop/web 12.31/web/app/routes.py', reloading
-2024-12-29 16:34:35,009 -  * Restarting with watchdog (fsevents)
-2024-12-29 16:34:36,451 -  * Debugger is active!
-2024-12-29 16:34:36,538 -  * Debugger PIN: 896-616-007
-2024-12-29 16:34:36,604 - 127.0.0.1 - - [29/Dec/2024 16:34:36] "GET /logs HTTP/1.1" 200 -
-2024-12-29 16:34:36,626 - 127.0.0.1 - - [29/Dec/2024 16:34:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-2024-12-29 16:34:36,634 - 127.0.0.1 - - [29/Dec/2024 16:34:36] "[36mGET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:36,638 - 127.0.0.1 - - [29/Dec/2024 16:34:36] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
-2024-12-29 16:34:36,639 - 127.0.0.1 - - [29/Dec/2024 16:34:36] "[36mGET /static/js/readpage.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:36,639 - 127.0.0.1 - - [29/Dec/2024 16:34:36] "[36mGET /static/js/like.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:36,640 - 127.0.0.1 - - [29/Dec/2024 16:34:36] "[36mGET /static/js/flash.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:36,644 - 127.0.0.1 - - [29/Dec/2024 16:34:36] "[36mGET /static/js/top.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:36,644 - 127.0.0.1 - - [29/Dec/2024 16:34:36] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:36,649 - 127.0.0.1 - - [29/Dec/2024 16:34:36] "[36mGET /static/image/user.jpg HTTP/1.1[0m" 304 -
-2024-12-29 16:34:36,652 - 127.0.0.1 - - [29/Dec/2024 16:34:36] "[36mGET /static/js/cookie.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:43,393 - 127.0.0.1 - - [29/Dec/2024 16:34:43] "GET /logs?page=2 HTTP/1.1" 200 -
-2024-12-29 16:34:43,412 - 127.0.0.1 - - [29/Dec/2024 16:34:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-2024-12-29 16:34:43,416 - 127.0.0.1 - - [29/Dec/2024 16:34:43] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
-2024-12-29 16:34:43,429 - 127.0.0.1 - - [29/Dec/2024 16:34:43] "[36mGET /static/image/user.jpg HTTP/1.1[0m" 304 -
-2024-12-29 16:34:43,440 - 127.0.0.1 - - [29/Dec/2024 16:34:43] "[36mGET /static/js/readpage.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:43,441 - 127.0.0.1 - - [29/Dec/2024 16:34:43] "[36mGET /static/js/top.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:43,441 - 127.0.0.1 - - [29/Dec/2024 16:34:43] "[36mGET /static/js/flash.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:43,441 - 127.0.0.1 - - [29/Dec/2024 16:34:43] "[36mGET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:43,444 - 127.0.0.1 - - [29/Dec/2024 16:34:43] "[36mGET /static/js/like.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:43,445 - 127.0.0.1 - - [29/Dec/2024 16:34:43] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:43,450 - 127.0.0.1 - - [29/Dec/2024 16:34:43] "[36mGET /static/js/cookie.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:54,023 - 127.0.0.1 - - [29/Dec/2024 16:34:54] "GET /logs?page=2 HTTP/1.1" 200 -
-2024-12-29 16:34:54,044 - 127.0.0.1 - - [29/Dec/2024 16:34:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-2024-12-29 16:34:54,045 - 127.0.0.1 - - [29/Dec/2024 16:34:54] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
-2024-12-29 16:34:54,070 - 127.0.0.1 - - [29/Dec/2024 16:34:54] "[36mGET /static/js/readpage.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:54,071 - 127.0.0.1 - - [29/Dec/2024 16:34:54] "[36mGET /static/js/top.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:54,072 - 127.0.0.1 - - [29/Dec/2024 16:34:54] "[36mGET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:54,072 - 127.0.0.1 - - [29/Dec/2024 16:34:54] "[36mGET /static/js/flash.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:54,074 - 127.0.0.1 - - [29/Dec/2024 16:34:54] "[36mGET /static/js/like.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:54,074 - 127.0.0.1 - - [29/Dec/2024 16:34:54] "[36mGET /static/image/user.jpg HTTP/1.1[0m" 304 -
-2024-12-29 16:34:54,081 - 127.0.0.1 - - [29/Dec/2024 16:34:54] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:54,084 - 127.0.0.1 - - [29/Dec/2024 16:34:54] "[36mGET /static/js/cookie.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:57,575 - 127.0.0.1 - - [29/Dec/2024 16:34:57] "GET /logs?page=1 HTTP/1.1" 200 -
-2024-12-29 16:34:57,593 - 127.0.0.1 - - [29/Dec/2024 16:34:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-2024-12-29 16:34:57,605 - 127.0.0.1 - - [29/Dec/2024 16:34:57] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
-2024-12-29 16:34:57,613 - 127.0.0.1 - - [29/Dec/2024 16:34:57] "[36mGET /static/image/user.jpg HTTP/1.1[0m" 304 -
-2024-12-29 16:34:57,614 - 127.0.0.1 - - [29/Dec/2024 16:34:57] "[36mGET /static/js/like.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:57,615 - 127.0.0.1 - - [29/Dec/2024 16:34:57] "[36mGET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:57,616 - 127.0.0.1 - - [29/Dec/2024 16:34:57] "[36mGET /static/js/top.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:57,619 - 127.0.0.1 - - [29/Dec/2024 16:34:57] "[36mGET /static/js/flash.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:57,624 - 127.0.0.1 - - [29/Dec/2024 16:34:57] "[36mGET /static/js/readpage.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:57,626 - 127.0.0.1 - - [29/Dec/2024 16:34:57] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
-2024-12-29 16:34:57,627 - 127.0.0.1 - - [29/Dec/2024 16:34:57] "[36mGET /static/js/cookie.js HTTP/1.1[0m" 304 -
+2024-12-31 15:06:46,307 -  * Restarting with watchdog (fsevents)
+2024-12-31 15:06:47,065 -  * Debugger is active!
+2024-12-31 15:06:47,080 -  * Debugger PIN: 896-616-007
+2024-12-31 15:08:04,797 - 127.0.0.1 - - [31/Dec/2024 15:08:04] "GET / HTTP/1.1" 200 -
+2024-12-31 15:08:04,870 - 127.0.0.1 - - [31/Dec/2024 15:08:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-31 15:08:04,871 - 127.0.0.1 - - [31/Dec/2024 15:08:04] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-12-31 15:08:04,872 - 127.0.0.1 - - [31/Dec/2024 15:08:04] "[36mGET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2024-12-31 15:08:04,965 - 127.0.0.1 - - [31/Dec/2024 15:08:04] "[36mGET /static/js/flash.js HTTP/1.1[0m" 304 -
+2024-12-31 15:08:04,965 - 127.0.0.1 - - [31/Dec/2024 15:08:04] "[36mGET /static/js/top.js HTTP/1.1[0m" 304 -
+2024-12-31 15:08:04,973 - 127.0.0.1 - - [31/Dec/2024 15:08:04] "[36mGET /static/js/like.js HTTP/1.1[0m" 304 -
+2024-12-31 15:08:04,973 - 127.0.0.1 - - [31/Dec/2024 15:08:04] "[36mGET /static/js/readpage.js HTTP/1.1[0m" 304 -
+2024-12-31 15:08:04,980 - 127.0.0.1 - - [31/Dec/2024 15:08:04] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2024-12-31 15:08:04,983 - 127.0.0.1 - - [31/Dec/2024 15:08:04] "[36mGET /static/js/cookie.js HTTP/1.1[0m" 304 -
+2024-12-31 15:08:15,789 - 127.0.0.1 - - [31/Dec/2024 15:08:15] "GET / HTTP/1.1" 200 -
+2024-12-31 15:08:15,850 - 127.0.0.1 - - [31/Dec/2024 15:08:15] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-12-31 15:08:15,851 - 127.0.0.1 - - [31/Dec/2024 15:08:15] "[36mGET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2024-12-31 15:08:15,857 - 127.0.0.1 - - [31/Dec/2024 15:08:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-31 15:08:15,952 - 127.0.0.1 - - [31/Dec/2024 15:08:15] "[36mGET /static/js/top.js HTTP/1.1[0m" 304 -
+2024-12-31 15:08:15,959 - 127.0.0.1 - - [31/Dec/2024 15:08:15] "[36mGET /static/js/flash.js HTTP/1.1[0m" 304 -
+2024-12-31 15:08:15,960 - 127.0.0.1 - - [31/Dec/2024 15:08:15] "[36mGET /static/js/like.js HTTP/1.1[0m" 304 -
+2024-12-31 15:08:15,969 - 127.0.0.1 - - [31/Dec/2024 15:08:15] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2024-12-31 15:08:15,970 - 127.0.0.1 - - [31/Dec/2024 15:08:15] "[36mGET /static/js/readpage.js HTTP/1.1[0m" 304 -
+2024-12-31 15:08:15,974 - 127.0.0.1 - - [31/Dec/2024 15:08:15] "[36mGET /static/js/cookie.js HTTP/1.1[0m" 304 -
+2024-12-31 15:08:16,241 - 127.0.0.1 - - [31/Dec/2024 15:08:16] "[36mGET /static/image/background4.jpg HTTP/1.1[0m" 304 -
+2024-12-31 15:08:16,241 - 127.0.0.1 - - [31/Dec/2024 15:08:16] "[36mGET /static/image/background3.jpg HTTP/1.1[0m" 304 -
+2024-12-31 15:08:16,242 - 127.0.0.1 - - [31/Dec/2024 15:08:16] "[36mGET /static/image/background2.jpg HTTP/1.1[0m" 304 -
+2024-12-31 15:33:50,566 - 127.0.0.1 - - [31/Dec/2024 15:33:50] "GET / HTTP/1.1" 200 -
+2024-12-31 15:33:50,645 - 127.0.0.1 - - [31/Dec/2024 15:33:50] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-12-31 15:33:50,666 - 127.0.0.1 - - [31/Dec/2024 15:33:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-31 15:33:50,678 - 127.0.0.1 - - [31/Dec/2024 15:33:50] "[36mGET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2024-12-31 15:33:50,685 - 127.0.0.1 - - [31/Dec/2024 15:33:50] "[36mGET /static/js/top.js HTTP/1.1[0m" 304 -
+2024-12-31 15:33:50,710 - 127.0.0.1 - - [31/Dec/2024 15:33:50] "[36mGET /static/js/flash.js HTTP/1.1[0m" 304 -
+2024-12-31 15:33:50,715 - 127.0.0.1 - - [31/Dec/2024 15:33:50] "[36mGET /static/js/like.js HTTP/1.1[0m" 304 -
+2024-12-31 15:33:50,717 - 127.0.0.1 - - [31/Dec/2024 15:33:50] "[36mGET /static/js/readpage.js HTTP/1.1[0m" 304 -
+2024-12-31 15:33:50,722 - 127.0.0.1 - - [31/Dec/2024 15:33:50] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2024-12-31 15:33:50,727 - 127.0.0.1 - - [31/Dec/2024 15:33:50] "[36mGET /static/js/cookie.js HTTP/1.1[0m" 304 -
+2024-12-31 15:33:56,315 - 127.0.0.1 - - [31/Dec/2024 15:33:56] "[36mGET /static/image/background4.jpg HTTP/1.1[0m" 304 -
+2024-12-31 15:33:56,318 - 127.0.0.1 - - [31/Dec/2024 15:33:56] "[36mGET /static/image/background2.jpg HTTP/1.1[0m" 304 -
+2024-12-31 15:33:56,319 - 127.0.0.1 - - [31/Dec/2024 15:33:56] "[36mGET /static/image/background3.jpg HTTP/1.1[0m" 304 -
+2024-12-31 15:42:58,221 - 127.0.0.1 - - [31/Dec/2024 15:42:58] "GET /courses HTTP/1.1" 200 -
+2024-12-31 15:42:58,325 - 127.0.0.1 - - [31/Dec/2024 15:42:58] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-12-31 15:42:58,326 - 127.0.0.1 - - [31/Dec/2024 15:42:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-31 15:42:58,328 - 127.0.0.1 - - [31/Dec/2024 15:42:58] "[36mGET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2024-12-31 15:42:58,378 - 127.0.0.1 - - [31/Dec/2024 15:42:58] "[36mGET /static/js/top.js HTTP/1.1[0m" 304 -
+2024-12-31 15:42:58,383 - 127.0.0.1 - - [31/Dec/2024 15:42:58] "[36mGET /static/js/flash.js HTTP/1.1[0m" 304 -
+2024-12-31 15:42:58,387 - 127.0.0.1 - - [31/Dec/2024 15:42:58] "[36mGET /static/js/like.js HTTP/1.1[0m" 304 -
+2024-12-31 15:42:58,394 - 127.0.0.1 - - [31/Dec/2024 15:42:58] "[36mGET /static/js/readpage.js HTTP/1.1[0m" 304 -
+2024-12-31 15:42:58,395 - 127.0.0.1 - - [31/Dec/2024 15:42:58] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2024-12-31 15:42:58,400 - 127.0.0.1 - - [31/Dec/2024 15:42:58] "[36mGET /static/js/cookie.js HTTP/1.1[0m" 304 -
+2024-12-31 15:42:58,985 - 127.0.0.1 - - [31/Dec/2024 15:42:58] "[36mGET /static/image/poster.jpg HTTP/1.1[0m" 304 -
+2024-12-31 15:43:49,122 - 127.0.0.1 - - [31/Dec/2024 15:43:49] "GET /login HTTP/1.1" 200 -
+2024-12-31 15:43:49,183 - 127.0.0.1 - - [31/Dec/2024 15:43:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2024-12-31 15:43:49,203 - 127.0.0.1 - - [31/Dec/2024 15:43:49] "[36mGET /static/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2024-12-31 15:43:49,204 - 127.0.0.1 - - [31/Dec/2024 15:43:49] "[36mGET /static/js/top.js HTTP/1.1[0m" 304 -
+2024-12-31 15:43:49,204 - 127.0.0.1 - - [31/Dec/2024 15:43:49] "[36mGET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2024-12-31 15:43:49,223 - 127.0.0.1 - - [31/Dec/2024 15:43:49] "[36mGET /static/js/like.js HTTP/1.1[0m" 304 -
+2024-12-31 15:43:49,230 - 127.0.0.1 - - [31/Dec/2024 15:43:49] "[36mGET /static/js/flash.js HTTP/1.1[0m" 304 -
+2024-12-31 15:43:49,236 - 127.0.0.1 - - [31/Dec/2024 15:43:49] "[36mGET /static/js/readpage.js HTTP/1.1[0m" 304 -
+2024-12-31 15:43:49,242 - 127.0.0.1 - - [31/Dec/2024 15:43:49] "[36mGET /static/js/validation.js HTTP/1.1[0m" 304 -
+2024-12-31 15:43:49,245 - 127.0.0.1 - - [31/Dec/2024 15:43:49] "[36mGET /static/js/login+change.js HTTP/1.1[0m" 304 -
+2024-12-31 15:43:49,248 - 127.0.0.1 - - [31/Dec/2024 15:43:49] "[36mGET /static/js/cookie.js HTTP/1.1[0m" 304 -
+2024-12-31 15:43:49,590 - 127.0.0.1 - - [31/Dec/2024 15:43:49] "[36mGET /static/image/login-picture.jpg HTTP/1.1[0m" 304 -

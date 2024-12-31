@@ -17,10 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.getElementById('likes-count').innerText = data.likes_count;
 
                     // update the button text
-                    button.innerHTML = data.liked ? '<i class="bi bi-heart-fill"></i> Unlike' : '<i class="bi bi-heart"></i> Like';
+                    button.innerHTML = data.liked ?
+                        '<i class="bi bi-heart-fill"></i> Unlike' : '<i class="bi bi-heart"></i> Like';
 
                     // make sure the button has the correct URL
-                    button.setAttribute('data-url', data.new_url);  // 如果你需要动态更新 URL 可以这样处理
+                    button.setAttribute('data-url', data.new_url);
                 } else {
                     alert('Error: ' + data.message);
                 }

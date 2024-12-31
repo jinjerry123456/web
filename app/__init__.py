@@ -4,7 +4,8 @@ from flask_login import LoginManager
 from config import Config
 # from flask_migrate import Migrate
 import logging
-from logging.handlers import RotatingFileHandler
+# from logging.handlers import RotatingFileHandler
+from logging.config import dictConfig
 import os
 
 # get the relavent path
@@ -28,29 +29,68 @@ def create_app():
     # Debugging information
     print(f"Debug mode: {app.debug}")
 
+    # Ensure log directory exists
+    log_dir = os.path.dirname(user_log_file)
+    os.makedirs(log_dir, exist_ok=True)
+
     # Set log level to INFO or DEBUG
     app.logger.setLevel(logging.INFO)
 
     # Set up logging to a txt file
     if not app.debug:
-        # Create a rotating file handler to write user logs to a .txt file
-        user_handler = RotatingFileHandler(
-            user_log_file, maxBytes=10240, backupCount=1)
-        user_handler.setLevel(logging.INFO)
-        user_formatter = logging.Formatter(
-            '%(asctime)s - %(levelname)s - %(message)s')
-        user_handler.setFormatter(user_formatter)
-        app.logger.addHandler(user_handler)
-
-        # Create a rotating file handler to write system logs to a .txt file
-        system_handler = RotatingFileHandler(
-            system_log_file, maxBytes=10240, backupCount=1)
-        system_handler.setLevel(logging.INFO)
-        system_formatter = logging.Formatter(
-            '%(asctime)s - %(message)s')
-        system_handler.setFormatter(system_formatter)
-        logging.getLogger('werkzeug').addHandler(system_handler)
-
+        dictConfig({
+            # Version 1 is the version of the logging configuration schema
+            "version": 1,
+            "disable_existing_loggers": False,
+            "formatters": {
+                "default": {
+                    "format": (
+                        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+                    )
+                },
+                "system": {
+                    "format": "%(asctime)s - %(message)s"
+                }
+            },
+            "handlers": {
+                "console": {
+                    "class": "logging.StreamHandler",
+                    "level": "INFO",
+                    "formatter": "default",
+                },
+                # Log to a file
+                "user_log_file": {
+                    "class": "logging.handlers.RotatingFileHandler",
+                    "level": "INFO",
+                    "formatter": "default",
+                    "filename": user_log_file,
+                    "maxBytes": 20*1024*1024,
+                    "backupCount": 1,
+                    "encoding": "utf8",
+                },
+                # Log to a file
+                "system_log_file": {
+                    "class": "logging.handlers.RotatingFileHandler",
+                    "level": "INFO",
+                    "formatter": "system",
+                    "filename": system_log_file,
+                    "maxBytes": 20*1024*1024,
+                    "backupCount": 1,
+                    "encoding": "utf8",
+                },
+            },
+            "loggers": {
+                "": {
+                    "level": "DEBUG",
+                    "handlers": ["console", "user_log_file"],
+                },
+                "werkzeug": {
+                    "level": "INFO",
+                    "handlers": ["system_log_file"],
+                    "propagate": False
+                }
+            }
+        })
     else:
         print("Logging is not set up because the app is in debug mode.")
         handler = logging.StreamHandler()

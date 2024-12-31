@@ -24,7 +24,7 @@ const bubleCreate = () => {
     // create a span element
     const buble = document.createElement('span')
     // add the class name
-    let r = Math.random() * 5 + 25 //半径大小为25~30
+    let r = Math.random() * 5 + 25
     // set the style
     buble.style.width = r + 'px'
     buble.style.height = r + 'px'

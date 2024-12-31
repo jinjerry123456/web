@@ -26,3 +26,153 @@
 2024-12-29 16:34:43,391 - INFO - Checking role for user Kim
 2024-12-29 16:34:54,021 - INFO - Checking role for user Kim
 2024-12-29 16:34:57,573 - INFO - Checking role for user Kim
+2024-12-31 02:12:22,498 - INFO - Entering index
+2024-12-31 02:12:22,539 - INFO - Exiting index
+2024-12-31 02:12:52,199 - INFO - Entering index
+2024-12-31 02:12:52,205 - INFO - Exiting index
+2024-12-31 02:13:35,414 - INFO - Entering index
+2024-12-31 02:13:35,417 - INFO - Exiting index
+2024-12-31 02:29:21,325 - INFO - User Kim logged out.
+2024-12-31 02:29:21,343 - INFO - Entering index
+2024-12-31 02:29:21,348 - INFO - Exiting index
+2024-12-31 02:29:24,613 - INFO - Entering login_register
+2024-12-31 02:29:24,627 - INFO - Exiting login_register
+2024-12-31 02:31:34,431 - INFO - Entering login_register
+2024-12-31 02:31:34,433 - INFO - Exiting login_register
+2024-12-31 02:53:10,365 - INFO - Entering login_register
+2024-12-31 02:53:10,406 - WARNING - Failed login for username: 2022116009.
+2024-12-31 02:53:10,408 - INFO - Exiting login_register
+2024-12-31 02:53:23,876 - INFO - Entering login_register
+2024-12-31 02:53:23,892 - WARNING - Failed login for username: 2022116009.
+2024-12-31 02:53:23,892 - INFO - Exiting login_register
+2024-12-31 02:53:31,016 - INFO - Entering login_register
+2024-12-31 02:53:31,021 - WARNING - Failed login for username: 2022116009.
+2024-12-31 02:53:31,022 - INFO - Exiting login_register
+2024-12-31 03:04:14,306 - INFO - Entering login_register
+2024-12-31 03:04:14,550 - INFO - User Kim logged in successfully.
+2024-12-31 03:04:14,551 - INFO - Exiting login_register
+2024-12-31 03:04:14,567 - INFO - Entering index
+2024-12-31 03:04:14,573 - INFO - Exiting index
+2024-12-31 04:22:32,406 - INFO - Checking role for user Kim
+2024-12-31 04:22:32,410 - INFO - Entering create_course
+2024-12-31 04:22:32,429 - INFO - Exiting create_course
+2024-12-31 04:22:35,076 - INFO - Entering courses
+2024-12-31 04:22:35,099 - INFO - Exiting courses
+2024-12-31 04:22:41,647 - INFO - Entering course_detail for course_id: 3
+2024-12-31 04:22:41,661 - INFO - Exiting course_detail
+2024-12-31 04:22:54,184 - INFO - Entering toggle_like for course_id: 3
+2024-12-31 04:22:54,245 - INFO - Exiting toggle_like
+2024-12-31 04:25:44,053 - INFO - Entering index
+2024-12-31 04:25:44,063 - INFO - Exiting index
+2024-12-31 04:26:40,080 - INFO - User Kim logged out.
+2024-12-31 04:26:40,094 - INFO - Entering index
+2024-12-31 04:26:40,098 - INFO - Exiting index
+2024-12-31 04:26:42,324 - INFO - Entering login_register
+2024-12-31 04:26:42,333 - INFO - Exiting login_register
+2024-12-31 04:26:53,283 - INFO - Entering login_register
+2024-12-31 04:26:53,436 - INFO - User Kenzo logged in successfully.
+2024-12-31 04:26:53,437 - INFO - Exiting login_register
+2024-12-31 04:26:53,442 - INFO - Entering index
+2024-12-31 04:26:53,444 - INFO - Exiting index
+2024-12-31 04:27:00,802 - INFO - User Kenzo logged out.
+2024-12-31 04:27:00,810 - INFO - Entering index
+2024-12-31 04:27:00,814 - INFO - Exiting index
+2024-12-31 04:27:02,628 - INFO - Entering login_register
+2024-12-31 04:27:02,630 - INFO - Exiting login_register
+2024-12-31 04:27:30,503 - INFO - Entering login_register
+2024-12-31 04:27:30,837 - INFO - New user Student registered.
+2024-12-31 04:27:30,837 - INFO - Exiting login_register
+2024-12-31 04:27:30,841 - INFO - Entering login_register
+2024-12-31 04:27:30,843 - INFO - Exiting login_register
+2024-12-31 04:27:45,863 - INFO - Entering login_register
+2024-12-31 04:27:46,007 - INFO - User Student logged in successfully.
+2024-12-31 04:27:46,008 - INFO - Exiting login_register
+2024-12-31 04:27:46,014 - INFO - Entering index
+2024-12-31 04:27:46,018 - INFO - Exiting index
+2024-12-31 04:27:50,518 - INFO - Entering courses
+2024-12-31 04:27:50,526 - INFO - Exiting courses
+2024-12-31 04:27:55,058 - INFO - Entering course_detail for course_id: 1
+2024-12-31 04:27:55,066 - INFO - Exiting course_detail
+2024-12-31 04:28:50,282 - INFO - Entering add_favorite for course_id: 1
+2024-12-31 04:28:50,292 - INFO - Exiting add_favorite
+2024-12-31 04:28:50,301 - INFO - Entering course_detail for course_id: 1
+2024-12-31 04:28:50,304 - INFO - Exiting course_detail
+2024-12-31 04:28:53,188 - INFO - Entering courses
+2024-12-31 04:28:53,195 - INFO - Exiting courses
+2024-12-31 04:28:55,966 - INFO - Entering course_detail for course_id: 9
+2024-12-31 04:28:55,975 - INFO - Exiting course_detail
+2024-12-31 04:28:57,740 - INFO - Entering add_favorite for course_id: 9
+2024-12-31 04:28:57,748 - INFO - Exiting add_favorite
+2024-12-31 04:28:57,754 - INFO - Entering course_detail for course_id: 9
+2024-12-31 04:28:57,758 - INFO - Exiting course_detail
+2024-12-31 04:28:59,199 - INFO - Entering courses
+2024-12-31 04:28:59,203 - INFO - Exiting courses
+2024-12-31 04:29:01,764 - INFO - Entering course_detail for course_id: 8
+2024-12-31 04:29:01,771 - INFO - Exiting course_detail
+2024-12-31 04:29:03,336 - INFO - Entering add_favorite for course_id: 8
+2024-12-31 04:29:03,345 - INFO - Exiting add_favorite
+2024-12-31 04:29:03,351 - INFO - Entering course_detail for course_id: 8
+2024-12-31 04:29:03,356 - INFO - Exiting course_detail
+2024-12-31 04:29:09,355 - INFO - Entering my_courses
+2024-12-31 04:29:09,362 - INFO - Exiting my_courses
+2024-12-31 04:29:59,474 - INFO - User Student logged out.
+2024-12-31 04:29:59,481 - INFO - Entering index
+2024-12-31 04:29:59,484 - INFO - Exiting index
+2024-12-31 04:30:02,078 - INFO - Entering login_register
+2024-12-31 04:30:02,080 - INFO - Exiting login_register
+2024-12-31 04:30:14,776 - INFO - Entering login_register
+2024-12-31 04:30:14,925 - INFO - User Berry logged in successfully.
+2024-12-31 04:30:14,926 - INFO - Exiting login_register
+2024-12-31 04:30:14,934 - INFO - Entering index
+2024-12-31 04:30:14,936 - INFO - Exiting index
+2024-12-31 04:30:20,104 - INFO - Entering my_courses
+2024-12-31 04:30:20,107 - INFO - Exiting my_courses
+2024-12-31 04:33:51,203 - INFO - Entering my_courses
+2024-12-31 04:33:51,212 - INFO - Exiting my_courses
+2024-12-31 04:34:34,227 - INFO - Entering courses
+2024-12-31 04:34:34,236 - INFO - Exiting courses
+2024-12-31 04:34:41,904 - INFO - Entering course_detail for course_id: 18
+2024-12-31 04:34:41,914 - INFO - Exiting course_detail
+2024-12-31 04:34:43,846 - INFO - Entering add_favorite for course_id: 18
+2024-12-31 04:34:43,861 - INFO - Exiting add_favorite
+2024-12-31 04:34:43,871 - INFO - Entering course_detail for course_id: 18
+2024-12-31 04:34:43,875 - INFO - Exiting course_detail
+2024-12-31 04:34:50,909 - INFO - Entering my_courses
+2024-12-31 04:34:50,913 - INFO - Exiting my_courses
+2024-12-31 04:40:16,094 - INFO - User Berry logged out.
+2024-12-31 04:40:16,100 - INFO - Entering index
+2024-12-31 04:40:16,102 - INFO - Exiting index
+2024-12-31 04:40:17,909 - INFO - Entering login_register
+2024-12-31 04:40:17,914 - INFO - Exiting login_register
+2024-12-31 04:40:27,096 - INFO - Entering login_register
+2024-12-31 04:40:27,246 - INFO - User Teacher logged in successfully.
+2024-12-31 04:40:27,247 - INFO - Exiting login_register
+2024-12-31 04:40:27,254 - INFO - Entering index
+2024-12-31 04:40:27,257 - INFO - Exiting index
+2024-12-31 04:40:30,755 - INFO - Checking role for user Teacher
+2024-12-31 04:40:30,756 - INFO - Entering create_course
+2024-12-31 04:40:30,761 - INFO - Exiting create_course
+2024-12-31 04:45:05,329 - INFO - User Teacher logged out.
+2024-12-31 04:45:05,336 - INFO - Entering index
+2024-12-31 04:45:05,338 - INFO - Exiting index
+2024-12-31 04:45:30,757 - INFO - Entering login_register
+2024-12-31 04:45:30,761 - INFO - Exiting login_register
+2024-12-31 04:45:37,589 - INFO - Entering login_register
+2024-12-31 04:45:37,735 - INFO - User Kim logged in successfully.
+2024-12-31 04:45:37,735 - INFO - Exiting login_register
+2024-12-31 04:45:37,748 - INFO - Entering index
+2024-12-31 04:45:37,750 - INFO - Exiting index
+2024-12-31 04:45:50,274 - INFO - Checking role for user Kim
+2024-12-31 04:45:50,275 - INFO - Entering user_record
+2024-12-31 04:45:50,307 - INFO - Exiting user_record
+2024-12-31 04:46:10,750 - INFO - Checking role for user Kim
+2024-12-31 15:08:04,750 - INFO - Entering index
+2024-12-31 15:08:04,767 - INFO - Exiting index
+2024-12-31 15:08:15,768 - INFO - Entering index
+2024-12-31 15:08:15,781 - INFO - Exiting index
+2024-12-31 15:33:50,433 - INFO - Entering index
+2024-12-31 15:33:50,504 - INFO - Exiting index
+2024-12-31 15:42:58,060 - INFO - Entering courses
+2024-12-31 15:42:58,152 - INFO - Exiting courses
+2024-12-31 15:43:49,078 - INFO - Entering login_register
+2024-12-31 15:43:49,099 - INFO - Exiting login_register
