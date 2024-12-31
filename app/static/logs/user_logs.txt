@@ -176,3 +176,236 @@
 2024-12-31 15:42:58,152 - INFO - Exiting courses
 2024-12-31 15:43:49,078 - INFO - Entering login_register
 2024-12-31 15:43:49,099 - INFO - Exiting login_register
+2025-01-01 02:54:31,576 - app - INFO - Entering index
+2025-01-01 02:54:31,584 - app - INFO - Exiting index
+2025-01-01 02:54:47,413 - app - INFO - Entering login_register
+2025-01-01 02:54:47,418 - app - INFO - Exiting login_register
+2025-01-01 02:54:53,655 - app - INFO - Entering login_register
+2025-01-01 02:54:53,792 - app - INFO - User Kim logged in successfully.
+2025-01-01 02:54:53,793 - app - INFO - Exiting login_register
+2025-01-01 02:54:54,021 - app - INFO - Entering index
+2025-01-01 02:54:54,023 - app - INFO - Exiting index
+2025-01-01 02:54:56,629 - app - INFO - Checking role for user Kim
+2025-01-01 03:09:55,049 - app - INFO - Entering index
+2025-01-01 03:09:55,065 - app - INFO - Exiting index
+2025-01-01 03:09:59,614 - app - INFO - Checking role for user Kim
+2025-01-01 03:09:59,615 - app - INFO - Entering course_record
+2025-01-01 03:09:59,627 - app - INFO - Exiting course_record
+2025-01-01 03:10:01,363 - app - INFO - Checking role for user Kim
+2025-01-01 03:10:01,363 - app - INFO - Entering user_record
+2025-01-01 03:10:01,367 - app - INFO - Exiting user_record
+2025-01-01 03:10:05,001 - app - INFO - Checking role for user Kim
+2025-01-01 03:10:05,002 - app - INFO - Entering edit_user for user_id: 2
+2025-01-01 03:10:05,006 - app - INFO - Exiting edit_user
+2025-01-01 03:10:08,034 - app - INFO - Checking role for user Kim
+2025-01-01 03:10:08,035 - app - INFO - Entering edit_user for user_id: 2
+2025-01-01 03:10:08,090 - app - INFO - Exiting edit_user
+2025-01-01 03:10:08,102 - app - INFO - Checking role for user Kim
+2025-01-01 03:10:08,102 - app - INFO - Entering user_record
+2025-01-01 03:10:08,104 - app - INFO - Exiting user_record
+2025-01-01 03:10:10,788 - app - INFO - Checking role for user Kim
+2025-01-01 03:10:10,789 - app - INFO - Entering edit_user for user_id: 2
+2025-01-01 03:10:10,790 - app - INFO - Exiting edit_user
+2025-01-01 03:10:14,060 - app - INFO - Checking role for user Kim
+2025-01-01 03:10:14,062 - app - INFO - Entering edit_user for user_id: 2
+2025-01-01 03:10:14,065 - app - INFO - Exiting edit_user
+2025-01-01 03:10:14,077 - app - INFO - Checking role for user Kim
+2025-01-01 03:10:14,077 - app - INFO - Entering user_record
+2025-01-01 03:10:14,079 - app - INFO - Exiting user_record
+2025-01-01 03:11:39,970 - app - INFO - Checking role for user Kim
+2025-01-01 03:11:39,971 - app - INFO - Entering user_record
+2025-01-01 03:11:39,973 - app - INFO - Exiting user_record
+2025-01-01 03:11:41,550 - app - INFO - Checking role for user Kim
+2025-01-01 03:11:41,551 - app - INFO - Entering edit_user for user_id: 2
+2025-01-01 03:11:41,552 - app - INFO - Exiting edit_user
+2025-01-01 03:11:59,209 - app - INFO - Checking role for user Kim
+2025-01-01 03:11:59,210 - app - INFO - Entering edit_user for user_id: 2
+2025-01-01 03:11:59,214 - app - INFO - Exiting edit_user
+2025-01-01 03:12:01,822 - app - INFO - Checking role for user Kim
+2025-01-01 03:12:01,823 - app - INFO - Entering edit_user for user_id: 2
+2025-01-01 03:12:01,826 - app - INFO - Exiting edit_user
+2025-01-01 03:12:07,120 - app - INFO - Checking role for user Kim
+2025-01-01 03:12:07,120 - app - INFO - Entering user_record
+2025-01-01 03:12:07,122 - app - INFO - Exiting user_record
+2025-01-01 03:12:09,626 - app - INFO - Checking role for user Kim
+2025-01-01 03:12:09,626 - app - INFO - Entering edit_user for user_id: 2
+2025-01-01 03:12:09,628 - app - INFO - Exiting edit_user
+2025-01-01 03:12:29,951 - app - INFO - Checking role for user Kim
+2025-01-01 03:12:29,952 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:12:29,954 - app - INFO - Exiting edit_user
+2025-01-01 03:12:33,290 - app - INFO - Checking role for user Kim
+2025-01-01 03:12:33,291 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:12:33,293 - app - INFO - Exiting edit_user
+2025-01-01 03:12:48,298 - app - INFO - Checking role for user Kim
+2025-01-01 03:12:48,299 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:12:48,301 - app - INFO - Exiting edit_user
+2025-01-01 03:12:51,013 - app - INFO - Checking role for user Kim
+2025-01-01 03:12:51,014 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:12:51,017 - app - INFO - Username or email already exists.
+2025-01-01 03:12:51,017 - app - INFO - Exiting edit_user
+2025-01-01 03:12:54,308 - app - INFO - Checking role for user Kim
+2025-01-01 03:12:54,309 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:12:54,311 - app - INFO - Username or email already exists.
+2025-01-01 03:12:54,312 - app - INFO - Exiting edit_user
+2025-01-01 03:15:12,268 - app - INFO - Checking role for user Kim
+2025-01-01 03:15:12,268 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:15:12,271 - app - INFO - Username or email already exists.
+2025-01-01 03:15:12,271 - app - INFO - Exiting edit_user
+2025-01-01 03:15:16,093 - app - INFO - Checking role for user Kim
+2025-01-01 03:15:16,094 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:15:16,096 - app - INFO - Exiting edit_user
+2025-01-01 03:15:20,537 - app - INFO - Checking role for user Kim
+2025-01-01 03:15:20,538 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:15:20,540 - app - INFO - Exiting edit_user
+2025-01-01 03:15:23,476 - app - INFO - Checking role for user Kim
+2025-01-01 03:15:23,477 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:15:23,479 - app - INFO - Exiting edit_user
+2025-01-01 03:15:25,856 - app - INFO - Checking role for user Kim
+2025-01-01 03:15:25,856 - app - INFO - Entering create_course
+2025-01-01 03:15:25,859 - app - INFO - Exiting create_course
+2025-01-01 03:15:29,319 - app - INFO - Checking role for user Kim
+2025-01-01 03:15:29,320 - app - INFO - Entering user_record
+2025-01-01 03:15:29,322 - app - INFO - Exiting user_record
+2025-01-01 03:15:32,263 - app - INFO - Checking role for user Kim
+2025-01-01 03:15:32,263 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:15:32,265 - app - INFO - Exiting edit_user
+2025-01-01 03:15:36,745 - app - INFO - Checking role for user Kim
+2025-01-01 03:15:36,746 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:15:36,748 - app - INFO - Exiting edit_user
+2025-01-01 03:16:17,438 - app - INFO - Checking role for user Kim
+2025-01-01 03:16:17,439 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:16:17,440 - app - INFO - Exiting edit_user
+2025-01-01 03:16:20,503 - app - INFO - Checking role for user Kim
+2025-01-01 03:16:20,503 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:16:20,506 - app - INFO - Username or email already exists.
+2025-01-01 03:16:20,507 - app - INFO - Exiting edit_user
+2025-01-01 03:16:26,496 - app - INFO - Checking role for user Kim
+2025-01-01 03:16:26,497 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:16:26,501 - app - INFO - Exiting edit_user
+2025-01-01 03:16:26,513 - app - INFO - Checking role for user Kim
+2025-01-01 03:16:26,514 - app - INFO - Entering user_record
+2025-01-01 03:16:26,516 - app - INFO - Exiting user_record
+2025-01-01 03:16:31,388 - app - INFO - Checking role for user Kim
+2025-01-01 03:16:31,389 - app - INFO - Entering edit_user for user_id: 2
+2025-01-01 03:16:31,390 - app - INFO - Exiting edit_user
+2025-01-01 03:16:35,565 - app - INFO - Checking role for user Kim
+2025-01-01 03:16:35,566 - app - INFO - Entering edit_user for user_id: 2
+2025-01-01 03:16:35,570 - app - INFO - Username or email already exists.
+2025-01-01 03:16:35,570 - app - INFO - Exiting edit_user
+2025-01-01 03:16:41,514 - app - INFO - Checking role for user Kim
+2025-01-01 03:16:41,515 - app - INFO - Entering delete_user for user_id: 2
+2025-01-01 03:16:41,534 - app - INFO - Exiting delete_user
+2025-01-01 03:16:41,550 - app - INFO - Checking role for user Kim
+2025-01-01 03:16:41,550 - app - INFO - Entering user_record
+2025-01-01 03:16:41,553 - app - INFO - Exiting user_record
+2025-01-01 03:16:45,777 - app - INFO - Checking role for user Kim
+2025-01-01 03:16:45,777 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:16:45,778 - app - INFO - Exiting edit_user
+2025-01-01 03:16:48,694 - app - INFO - Checking role for user Kim
+2025-01-01 03:16:48,695 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:16:48,699 - app - INFO - Exiting edit_user
+2025-01-01 03:16:48,711 - app - INFO - Checking role for user Kim
+2025-01-01 03:16:48,711 - app - INFO - Entering user_record
+2025-01-01 03:16:48,712 - app - INFO - Exiting user_record
+2025-01-01 03:17:15,607 - app - INFO - Checking role for user Kim
+2025-01-01 03:17:15,608 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:17:15,609 - app - INFO - Exiting edit_user
+2025-01-01 03:18:33,303 - app - INFO - Checking role for user Kim
+2025-01-01 03:18:33,304 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:18:33,306 - app - INFO - Exiting edit_user
+2025-01-01 03:18:42,124 - app - INFO - Checking role for user Kim
+2025-01-01 03:18:42,124 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:18:42,126 - app - INFO - Exiting edit_user
+2025-01-01 03:18:54,620 - app - INFO - Checking role for user Kim
+2025-01-01 03:18:54,621 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:18:54,623 - app - INFO - Exiting edit_user
+2025-01-01 03:19:03,063 - app - INFO - Checking role for user Kim
+2025-01-01 03:19:03,064 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:19:03,066 - app - INFO - Exiting edit_user
+2025-01-01 03:19:05,385 - app - INFO - Checking role for user Kim
+2025-01-01 03:19:05,386 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:19:05,439 - app - INFO - Exiting edit_user
+2025-01-01 03:19:08,669 - app - INFO - Checking role for user Kim
+2025-01-01 03:19:08,669 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:19:08,671 - app - INFO - Exiting edit_user
+2025-01-01 03:19:32,577 - app - INFO - Checking role for user Kim
+2025-01-01 03:19:32,578 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:19:32,579 - app - INFO - Exiting edit_user
+2025-01-01 03:22:11,248 - app - INFO - Checking role for user Kim
+2025-01-01 03:22:11,249 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:22:11,251 - app - INFO - Exiting edit_user
+2025-01-01 03:22:14,751 - app - INFO - Checking role for user Kim
+2025-01-01 03:22:14,752 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:22:14,756 - app - INFO - Username or email already exists.
+2025-01-01 03:22:14,756 - app - INFO - Exiting edit_user
+2025-01-01 03:22:19,448 - app - INFO - Checking role for user Kim
+2025-01-01 03:22:19,448 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:22:19,454 - app - INFO - Exiting edit_user
+2025-01-01 03:22:19,465 - app - INFO - Checking role for user Kim
+2025-01-01 03:22:19,466 - app - INFO - Entering user_record
+2025-01-01 03:22:19,472 - app - INFO - Exiting user_record
+2025-01-01 03:23:34,304 - app - INFO - Checking role for user Kim
+2025-01-01 03:23:34,305 - app - INFO - Entering user_record
+2025-01-01 03:23:34,306 - app - INFO - Exiting user_record
+2025-01-01 03:23:35,989 - app - INFO - Checking role for user Kim
+2025-01-01 03:23:35,990 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:23:35,991 - app - INFO - Exiting edit_user
+2025-01-01 03:23:37,967 - app - INFO - Checking role for user Kim
+2025-01-01 03:23:37,967 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:23:37,969 - app - INFO - Exiting edit_user
+2025-01-01 03:23:42,735 - app - INFO - Checking role for user Kim
+2025-01-01 03:23:42,736 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:23:42,738 - app - INFO - Exiting edit_user
+2025-01-01 03:23:54,675 - app - INFO - Checking role for user Kim
+2025-01-01 03:23:54,676 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:23:54,678 - app - INFO - Exiting edit_user
+2025-01-01 03:23:59,602 - app - INFO - Checking role for user Kim
+2025-01-01 03:23:59,602 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:23:59,606 - app - INFO - Exiting edit_user
+2025-01-01 03:23:59,618 - app - INFO - Checking role for user Kim
+2025-01-01 03:23:59,618 - app - INFO - Entering user_record
+2025-01-01 03:23:59,621 - app - INFO - Exiting user_record
+2025-01-01 03:24:03,810 - app - INFO - Checking role for user Kim
+2025-01-01 03:24:03,810 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:24:03,811 - app - INFO - Exiting edit_user
+2025-01-01 03:24:07,282 - app - INFO - Checking role for user Kim
+2025-01-01 03:24:07,282 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:24:07,285 - app - INFO - Username or email already exists.
+2025-01-01 03:24:07,285 - app - INFO - Exiting edit_user
+2025-01-01 03:24:11,804 - app - INFO - Checking role for user Kim
+2025-01-01 03:24:11,804 - app - INFO - Entering edit_user for user_id: 3
+2025-01-01 03:24:11,818 - app - INFO - Exiting edit_user
+2025-01-01 03:24:11,830 - app - INFO - Checking role for user Kim
+2025-01-01 03:24:11,831 - app - INFO - Entering user_record
+2025-01-01 03:24:11,832 - app - INFO - Exiting user_record
+2025-01-01 03:26:23,957 - app - INFO - Entering index
+2025-01-01 03:26:23,963 - app - INFO - Exiting index
+2025-01-01 03:26:29,280 - app - INFO - Checking role for user Kim
+2025-01-01 03:26:29,281 - app - INFO - Entering user_record
+2025-01-01 03:26:29,293 - app - INFO - Exiting user_record
+2025-01-01 03:26:33,251 - app - INFO - Checking role for user Kim
+2025-01-01 03:26:33,252 - app - INFO - Entering course_record
+2025-01-01 03:26:33,259 - app - INFO - Exiting course_record
+2025-01-01 03:26:36,457 - app - INFO - Checking role for user Kim
+2025-01-01 03:26:39,058 - app - INFO - Checking role for user Kim
+2025-01-01 03:26:41,294 - app - INFO - Checking role for user Kim
+2025-01-01 03:26:41,294 - app - INFO - Entering create_course
+2025-01-01 03:26:41,298 - app - INFO - Exiting create_course
+2025-01-01 03:26:44,941 - app - INFO - Checking role for user Kim
+2025-01-01 03:26:44,942 - app - INFO - Entering create_course
+2025-01-01 03:26:44,957 - app - INFO - Exiting create_course
+2025-01-01 03:26:44,966 - app - INFO - Checking role for user Kim
+2025-01-01 03:26:44,966 - app - INFO - Entering create_course
+2025-01-01 03:26:44,966 - app - INFO - Exiting create_course
+2025-01-01 03:26:48,961 - app - INFO - Checking role for user Kim
+2025-01-01 03:26:48,962 - app - INFO - Entering course_record
+2025-01-01 03:26:48,969 - app - INFO - Exiting course_record
+2025-01-01 03:26:51,102 - app - INFO - Checking role for user Kim
+2025-01-01 03:26:51,103 - app - INFO - Entering course_record
+2025-01-01 03:26:51,106 - app - INFO - Exiting course_record
+2025-01-01 03:26:58,150 - app - INFO - Checking role for user Kim
+2025-01-01 03:26:58,151 - app - INFO - Entering delete_course for course_id: 23
+2025-01-01 03:26:58,169 - app - INFO - Exiting delete_course
+2025-01-01 03:26:58,175 - app - INFO - Checking role for user Kim
+2025-01-01 03:26:58,175 - app - INFO - Entering course_record
+2025-01-01 03:26:58,177 - app - INFO - Exiting course_record

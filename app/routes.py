@@ -418,7 +418,7 @@ def edit_user(user_id):
         else:
             user.username = form.username.data
             user.email = form.email.data
-            user.role = form.role.data
+            # user.role = form.role.data
             db.session.commit()
             flash('User information updated successfully.', 'success')
             current_app.logger.info('Exiting edit_user')
